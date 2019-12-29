@@ -432,6 +432,7 @@ input[type="number"] {
     background: #252525;
     color: #fff;
     text-align: center;
+<<<<<<< HEAD
     float: left;
 }
 .footer::after{
@@ -443,6 +444,17 @@ input[type="number"] {
     text-align: center;
 }
 /* =========================== Responsive =========================== */
+=======
+    line-height: 10;
+}
+/* =========================== Responsive =========================== */
+@media only screen and (max-width: 1125px) {
+    .list{
+        display: block;
+    }
+}
+
+>>>>>>> e09f8bc46bb6717642af193a7807a0854682f31a
 @media only screen and (max-width: 800px) {
     .container {
         width: 100%;
@@ -475,6 +487,7 @@ input[type="number"] {
     .signup,.login{
         width: 80%;
     }
+<<<<<<< HEAD
     /* =========================== Toggle menu =========================== */
     .menu-show {
         color: #797979;
@@ -531,6 +544,8 @@ input[type="number"] {
         width: 90%;
     }
 }
+=======
+>>>>>>> e09f8bc46bb6717642af193a7807a0854682f31a
 }
 /* =========================== 600px =========================== */
 @media only screen and (max-width: 600px) {
@@ -573,13 +588,23 @@ input[type="number"] {
         width: 90%;
     }
     /* =========================== Toggle menu =========================== */
+<<<<<<< HEAD
     /*
+=======
+    .logo{
+        display: none;
+    }
+>>>>>>> e09f8bc46bb6717642af193a7807a0854682f31a
     .menu-show {
         color: #797979;
         font-size: 35px;
         width: 35px;
         height: 40px;
+<<<<<<< HEAD
         margin: 10px 10px;
+=======
+        margin: 15px 20px;
+>>>>>>> e09f8bc46bb6717642af193a7807a0854682f31a
         display: block;
         cursor: pointer;
     }
@@ -628,7 +653,11 @@ input[type="number"] {
     .menu-list ul li a:hover::after {
         width: 90%;
     }
+<<<<<<< HEAD
 }*/
+=======
+}
+>>>>>>> e09f8bc46bb6717642af193a7807a0854682f31a
 /* =========================== 400px =========================== */
 @media only screen and (max-width: 400px) {
     .container {

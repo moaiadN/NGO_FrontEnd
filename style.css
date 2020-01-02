@@ -1,13 +1,22 @@
 /* =========================== global =========================== */
+<<<<<<< HEAD
 * {
     box-sizing: border-box;
     /* font-family: "Century Gothic",sans-serif; */
 }
 body {
+=======
+*{
+    box-sizing: border-box;
+    /* font-family: "Century Gothic",sans-serif; */
+}
+body{
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     margin: 0;
     padding: 0;
     background: linear-gradient(#dfe4ea, #fff);
 }
+<<<<<<< HEAD
 .fix { clear: both;}
 a {text-decoration: none;}
 a:hover {color: #5fa8d3;}
@@ -16,10 +25,20 @@ a:hover {color: #5fa8d3;}
 
 /*=========================== NAV bar =========================== */
 .container {
+=======
+.fix{ clear: both; }
+a { text-decoration: none; }
+a:hover { color: #5fa8d3; }
+.left{ float: left}
+.right{float: right;}
+/*=========================== NAV bar =========================== */
+.container{
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     width: 95%;
     height: auto;
     margin: auto;
 }
+<<<<<<< HEAD
 
 nav {
     width: 100%;
@@ -45,20 +64,63 @@ nav {
 }
 
 .list ul li {
+=======
+nav{
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(#fff , #dfe4ea);
+    position: fixed;
+    z-index: 1;
+}
+.logo{
+    float: left;
+    margin: 5px 30px;
+}
+.logo > img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid;
+    
+}
+.list{
+    float: left;
+    display: block;
+}
+.list::after{
+    content: "";
+    clear: both;
+}
+.list > ul{
+    list-style: none;
+    margin: 0;
+}
+.list ul li{
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     display: inline-block;
     padding: 30px 10px;
     margin-right: 15px;
 }
+<<<<<<< HEAD
 
 .list ul li a {
+=======
+.list ul li a{
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     color: #252525;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 3px;
+<<<<<<< HEAD
     line-height: 60px;
     padding: 0 10px;
 }
 
+=======
+    /* line-height: 60px; */
+    padding: 0 10px;
+}
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
 .list ul li a::after {
     content: '';
     display: block;
@@ -68,12 +130,19 @@ nav {
     margin-left: 10px;
     transition: width .3s;
 }
+<<<<<<< HEAD
 
 .list ul li a:hover::after {
     width: 90%;
 }
 
 .regLogin {
+=======
+.list ul li a:hover::after {
+    width: 90%;
+}
+.regLogin{
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     position: absolute;
     top: 17px;
     right: 15px;
@@ -81,6 +150,7 @@ nav {
     padding: 14px 10px;
     /* display: none; */
 }
+<<<<<<< HEAD
 
 .regLogin a,
 .logout a {
@@ -88,10 +158,18 @@ nav {
     padding: 0 10px;
     font-size: 15px;
     font-weight: bold;
+=======
+.regLogin a, .logout a{
+    color: #0011fc;
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight:bold;
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     /* border: 1px solid #5fa8d3; */
     padding: 10px;
 }
 
+<<<<<<< HEAD
 .regLogin a:hover,
 .logout a:hover {
     color: #5fa8d3;
@@ -99,6 +177,13 @@ nav {
 }
 
 .logout {
+=======
+.regLogin a:hover, .logout a:hover{
+    color: #5fa8d3;
+    transform: translate3D(0, 0, 0);
+}
+.logout{
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     position: absolute;
     top: 17px;
     right: 15px;
@@ -106,7 +191,10 @@ nav {
     padding: 14px 10px;
     visibility: hidden;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
 /* =========Search box====== */
 .searchBox {
     position: absolute;
@@ -116,7 +204,10 @@ nav {
     padding: 2px;
     width: 400px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
 .searchButton {
     color: white;
     float: right;
@@ -146,6 +237,7 @@ nav {
     width: 100%;
 
 }
+<<<<<<< HEAD
 
 /* ==================== */
 .menu-show {
@@ -154,12 +246,22 @@ nav {
 
 /* =========================== Header ===========================*/
 header {
+=======
+  /* ==================== */
+  .menu-show{
+      display: none;
+  }
+
+/* =========================== Header ===========================*/
+header{
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     width: 100%;
     height: 277px;
     background: #252525;
     color: #fff;
     position: relative;
 }
+<<<<<<< HEAD
 
 /* =========================== Courses =========================== */
 .body-courses {
@@ -167,6 +269,12 @@ header {
     /* display: table-row-group; */
 }
 
+=======
+/* =========================== Courses =========================== */
+.body-courses{
+    margin-top: 50px;
+}
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
 .course-info {
     width: 32.3333%;
     height: 230px;
@@ -177,6 +285,7 @@ header {
     margin-right: 1%;
     margin-bottom: 10px;
     transition: 0.5s;
+<<<<<<< HEAD
     border: 1px solid #bebebe;
     box-shadow: 0 2px 1px rgba(0, 0, 0, .3),
         0 1px 0 rgba(255, 255, 255, .5) inset;
@@ -185,6 +294,18 @@ header {
     box-shadow: 0 0 9px rgba(0, 0, 0, .5);
 }
 
+=======
+    /* border: 1px solid #bebebe; */
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .3),
+                0 1px 0 rgba(255, 255, 255, .5) inset; 
+}
+
+.course-info:hover {
+    /* transform: scale(1.005); */
+    box-shadow: 0 0 9px rgba(0, 0, 0, .5);
+    /* 0 1px 9px rgba(255, 255, 255, .5) inset; */
+}
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
 .course-info::after {
     content: '';
     clear: both;
@@ -222,7 +343,11 @@ hr {
 .content h3 {
     text-align: center;
     margin-bottom: 10px;
+<<<<<<< HEAD
     text-shadow: 0 2px 5px rgba(150, 0, 0, 0.4);
+=======
+    text-shadow: 0 2px 5px rgba(150,0,0,0.4);
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
 }
 
 .content label {
@@ -247,9 +372,14 @@ hr {
     right: 15px;
     font-weight: 900;
 }
+<<<<<<< HEAD
 
 /* =========================== Information =========================== */
 .title {
+=======
+/* =========================== Information =========================== */
+.title{
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     font-size: 30px;
     position: absolute;
     bottom: 30px;
@@ -258,21 +388,30 @@ hr {
     font-size: 40pt;
     letter-spacing: 5px;
 }
+<<<<<<< HEAD
 
 figure {
+=======
+figure{
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     width: 80%;
     height: 100vh;
     margin: auto;
     border: 1px solid #f5f5f5;
 }
+<<<<<<< HEAD
 
 .profile_pic {
+=======
+.profile_pic{
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     width: 242px;
     background: #fff;
     position: relative;
     top: -110px;
     box-shadow: 0 5px 10px #ccc;
     float: left;
+<<<<<<< HEAD
     border-radius: 30px 30px 0 0;
 }
 
@@ -291,11 +430,29 @@ figure {
 }
 
 .profile_pic .ngo_url {
+=======
+    border-radius: 30px 30px 0 0 ;
+}
+.profile_pic .picture{
+    width:240px;
+    height:240px;
+    margin-bottom: -15px;
+    border-radius: 30px 30px 0 0 ;
+}
+.profile_pic .picture img{
+    width:200px;
+    height:200px;
+    margin: 15px 0px 0px 20px;;
+   /* border-radius: 100px; */
+}
+.profile_pic .ngo_url{
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     text-align: center;
     font-style: italic;
     margin-bottom: 15px;
     font-weight: bold;
 }
+<<<<<<< HEAD
 
 .profile_pic .ul {
     font-weight: normal;
@@ -309,12 +466,25 @@ figure {
 }
 
 .about {
+=======
+.profile_pic .ul{
+    font-weight: normal;
+    margin: 10px 15px;
+    font-style: italic;
+    font-size: 10pt ;
+}
+.profile_pic .ul li{
+    margin-bottom: 10px;
+}
+.about{
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     margin-top: 35px;
     margin-left: 280px;
     font-weight: normal;
     width: 40%;
     text-align: justify;
 }
+<<<<<<< HEAD
 
 .about .bio {
     font-family: "Century Gothic";
@@ -323,6 +493,13 @@ figure {
 /* =========================== SignUp/LogIn =========================== */
 .signup,
 .login {
+=======
+.about .bio{
+    font-family: "Century Gothic";
+}
+/* =========================== SignUp/LogIn =========================== */
+.signup,.login {
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     width: 40%;
     height: auto;
     margin: 50px auto;
@@ -331,6 +508,7 @@ figure {
     position: relative;
     background-color: #fff;
 }
+<<<<<<< HEAD
 
 .signup h1,
 .login h1 {
@@ -340,6 +518,13 @@ figure {
     ;
 }
 
+=======
+.signup h1,.login h1 {
+    text-align: center;
+    padding: 20px 0 0;
+    font-size: 50px;;
+}
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
 .form {
     width: 90%;
     position: relative;
@@ -347,7 +532,10 @@ figure {
     margin: auto;
     overflow: hidden;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
 .form input {
     width: 100%;
     height: 100%;
@@ -357,7 +545,10 @@ figure {
     outline: none;
     background: transparent;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
 .form label {
     position: absolute;
     bottom: 0;
@@ -367,7 +558,10 @@ figure {
     pointer-events: none;
     border-bottom: 1px solid black;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
 .form label::after {
     content: "";
     position: absolute;
@@ -379,26 +573,41 @@ figure {
     transform: translateX(-100%);
     transition: transform 0.3s ease;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
 .content-input {
     position: absolute;
     bottom: 0;
     left: 0;
     transition: all 0.3s ease;
 }
+<<<<<<< HEAD
 
 .form input:focus+.label-input .content-input,
 .form input:valid+.label-input .content-input {
+=======
+.form input:focus + .label-input .content-input,
+.form input:valid + .label-input .content-input {
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     transform: translateY(-150%);
     font-size: 14px;
     color: #5fa8d3;
 }
+<<<<<<< HEAD
 
 .form input:focus+.label-input::after,
 .form input:valid+.label-input::after {
     transform: translateX(0);
 }
 
+=======
+.form input:focus + .label-input::after,
+.form input:valid + .label-input::after {
+    transform: translateX(0);
+}
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
 .error {
     width: 90%;
     margin: 5px auto 0;
@@ -406,16 +615,25 @@ figure {
     font-size: 17px;
     visibility: hidden;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
+<<<<<<< HEAD
 
 input[type="number"] {
     -moz-appearance: textfield;
 }
 
+=======
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
 .btn {
     width: 90%;
     height: 50px;
@@ -430,6 +648,7 @@ input[type="number"] {
     background: transparent;
     cursor: pointer;
 }
+<<<<<<< HEAD
 
 .btn:hover {
     background: #5fa8d3;
@@ -437,24 +656,46 @@ input[type="number"] {
 
 .have-acc {
     /*    margin-bottom: 20px;*/
+=======
+.btn:hover {
+    background: #5fa8d3;
+}
+.have-acc{
+/*    margin-bottom: 20px;*/
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     padding: 20px 0;
     width: 95%;
     text-align: right;
 }
+<<<<<<< HEAD
 
 .form-footer {
+=======
+.form-footer{
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     width: 90%;
     margin: 0px auto;
     padding: 20px;
     overflow: hidden;
 }
+<<<<<<< HEAD
 #show-hide {
+=======
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+#show-hide{
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     position: absolute;
     right: 5px;
     bottom: 5px;
     cursor: pointer;
     display: none;
 }
+<<<<<<< HEAD
 
 /* =========================== Footer =========================== */
 .footer {
@@ -525,17 +766,90 @@ input[type="number"] {
         width: 90%;
     }
 
+=======
+/* =========================== Footer =========================== */
+.footer{
+    width: 100%;
+    height: 100px;
+    background: #252525;
+    color: #fff;
+    text-align: center;
+<<<<<<< HEAD
+    float: left;
+}
+.footer::after{
+    content: "";
+    clear: both;
+}
+.foot{
+    margin: 45px;
+    text-align: center;
+}
+/* =========================== Responsive =========================== */
+=======
+    line-height: 10;
+}
+/* =========================== Responsive =========================== */
+@media only screen and (max-width: 1125px) {
+    .list{
+        display: block;
+    }
+}
+
+>>>>>>> e09f8bc46bb6717642af193a7807a0854682f31a
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
+    .list {
+        margin-left: -55px;
+    }
+    .list > ul > li {
+        padding: 10px;
+        margin-right: -10px;
+    }
+    .course-info {
+        width: 48.7%;
+        margin: 5px 5px;
+    }
+    header .title{
+        top: 20px;
+        left: 225px;
+    }
+    .profile_pic{
+        position: relative;
+        top: -180px;
+        left: 225px;
+    }
+    .about{
+        position: absolute;
+        top: 500px;
+        left: 25px;
+    }
+    .signup,.login{
+        width: 80%;
+    }
+<<<<<<< HEAD
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     /* =========================== Toggle menu =========================== */
     .menu-show {
         color: #797979;
         font-size: 35px;
         width: 35px;
         height: 40px;
+<<<<<<< HEAD
         margin: 15px 20px;
         display: block;
         cursor: pointer;
     }
 
+=======
+        margin: 10px 10px;
+        display: block;
+        cursor: pointer;
+    }
+    
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     .menu-list {
         background: rgba(0, 0, 0, .7);
         width: 229px;
@@ -544,18 +858,30 @@ input[type="number"] {
         margin-left: -8px;
         display: none;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     .menu-list ul {
         list-style: none;
         padding-top: 100px;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     .menu-list ul li {
         list-style: none;
         text-decoration: none;
         padding-bottom: 20px;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     .menu-list ul li a {
         text-decoration: none;
         color: #fff;
@@ -567,7 +893,10 @@ input[type="number"] {
         cursor: pointer;
         /* transition: all .5s cubic-bezier(0.4, 0, 1, 1); */
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     .menu-list ul li a::after {
         content: '';
         display: block;
@@ -578,11 +907,15 @@ input[type="number"] {
         /* transition: width .3s; */
         transition: all .5s cubic-bezier(0.4, 0, 1, 1);
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     .menu-list ul li a:hover::after {
         width: 90%;
     }
 }
+<<<<<<< HEAD
 
 /* =========================== max 600px =========================== */
 
@@ -600,24 +933,88 @@ input[type="number"] {
     .course-info {
         width: 48%;
         margin: 5px;
+=======
+=======
+>>>>>>> e09f8bc46bb6717642af193a7807a0854682f31a
+}
+/* =========================== 600px =========================== */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+    .course-info {
+        width: 95%;
+        margin: 5px 2.5%;
+    }
+    header .title{
+        top: 20px;
+        left: 112.5px;
+    }
+    .profile_pic{
+        position: relative;
+        top: -180px;
+        left: 112.5px;
+    }
+    .about{
+        position: absolute;
+        top: 500px;
+        left: -100px;
+    }
+    .about p{
+        width: 240px;
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     }
     .searchBox {
         position: absolute;
         top: 15px;
+<<<<<<< HEAD
         right: 2%;
         width: 63%;
         /* z-index: -1; */
     }
     /* ====================== Toggle menu ========================= */
+=======
+        left: 15%;
+        width: 82.5%;
+        z-index: -1;
+    }
+    .searchInput {
+        width: 100%;
+        /* margin-left: -250px; */
+    }
+    .signup,.login{
+        width: 90%;
+    }
+    /* =========================== Toggle menu =========================== */
+<<<<<<< HEAD
+    /*
+=======
+    .logo{
+        display: none;
+    }
+>>>>>>> e09f8bc46bb6717642af193a7807a0854682f31a
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     .menu-show {
         color: #797979;
         font-size: 35px;
         width: 35px;
         height: 40px;
+<<<<<<< HEAD
         margin: 15px 20px;
         display: block;
         cursor: pointer;
     }
+=======
+<<<<<<< HEAD
+        margin: 10px 10px;
+=======
+        margin: 15px 20px;
+>>>>>>> e09f8bc46bb6717642af193a7807a0854682f31a
+        display: block;
+        cursor: pointer;
+    }
+    
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     .menu-list {
         background: rgba(0, 0, 0, .7);
         width: 229px;
@@ -626,16 +1023,30 @@ input[type="number"] {
         margin-left: -8px;
         display: none;
     }
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     .menu-list ul {
         list-style: none;
         padding-top: 100px;
     }
+<<<<<<< HEAD
     .menu-list ul li {
         list-style: none;
         text-decoration: none;
         padding-bottom: 5px;
         width: 105px;
     }
+=======
+    
+    .menu-list ul li {
+        list-style: none;
+        text-decoration: none;
+        padding-bottom: 20px;
+    }
+    
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     .menu-list ul li a {
         text-decoration: none;
         color: #fff;
@@ -645,6 +1056,10 @@ input[type="number"] {
         font-size: 20px;
         font-weight: bold;
         cursor: pointer;
+<<<<<<< HEAD
+=======
+        /* transition: all .5s cubic-bezier(0.4, 0, 1, 1); */
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     }
     .menu-list ul li a::after {
         content: '';
@@ -652,6 +1067,7 @@ input[type="number"] {
         width: 0;
         height: 2px;
         background: #fff;
+<<<<<<< HEAD
         transition: all .5s cubic-bezier(0.4, 0, 1, 1);
     }
     .menu-list ul li a:hover::after {
@@ -720,12 +1136,63 @@ input[type="number"] {
     }
     .course-info {
         width: 32%;
+=======
+        margin-left: 10px;
+        /* transition: width .3s; */
+        transition: all .5s cubic-bezier(0.4, 0, 1, 1);
+    }
+    .menu-list ul li a:hover::after {
+        width: 90%;
+    }
+<<<<<<< HEAD
+}*/
+=======
+}
+>>>>>>> e09f8bc46bb6717642af193a7807a0854682f31a
+/* =========================== 400px =========================== */
+@media only screen and (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
+    .course-info {
+        width: 95%;
+        margin: 5px 2.5%;
+    }
+    header .title{
+        top: 20px;
+        left: 25.25px;
+        font-size: 53px;
+    }
+    .profile_pic{
+        position: relative;
+        top: -180px;
+        left: 40px;
+    }
+    .about{
+        position: absolute;
+        top: 500px;
+        left: -195px;
+    }
+    .about p{
+        width: 235px;
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87
     }
     .searchBox {
         position: absolute;
         top: 15px;
+<<<<<<< HEAD
         right: 20%;
     }
     .signup, .login {
         width: 50%;
 }
+=======
+        left: 15%;
+        z-index: -1;
+    }
+    .signup,.login{
+        width: 98%;
+    }
+}
+
+>>>>>>> 4e670376056cb2a8478158e6e8bc757fff673e87

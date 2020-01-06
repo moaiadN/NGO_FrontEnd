@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.CSS">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <nav>
+            <!-- <div class="logo">
+                <img src="./images/logo.png" alt="LOGO" title="LOGO">
+            </div> -->
+            <span class="menu-show" onclick="toggleMenu()">&#9776</span>
+            <div class="list menu-list" id="menu-list">
+                <ul>
+                    <li><a href="./index.html" class="active"> home </a></li> 
+                </ul>
+                <div class="regLogin">
+                    <a href="./login.html"> login </a>
+                </div>
+            </div>
+            <div class="searchBox">
+                <input class="searchInput" type="text" name="" placeholder="Search">
+                <button class="searchButton" href="#">
+                    <img src="./images/search-24px.svg">
+                </button>
+            </div>
+    </nav>
+    <header style="background: none;margin-bottom: -160px;">
+        <span class="title"></span>
+    </header>
+    <section class="signup" id="signup">
+        <h1>Sign Up</h1>
+        <hr style="border: 1px groove #fffefe47;width: 70%;margin: -31px 15%;">
+        <div class="form">
+            <input type="text" name="name" autocomplete="off" required>
+            <label for="name" class="label-input">
+                <span class="content-input">Full Name</span>
+            </label>
+        </div>
+        <div class="error">Enter full Name</div>
+        <div class="form">
+            <input type="email" name="email" autocomplete="off" required>
+            <label for="email" class="label-input">
+                <span class="content-input">Email</span>
+            </label>
+        </div>
+        <div class="error">Invalid email format</div>
+        <div class="form">
+            <input type="text" name="address" autocomplete="off" required>
+            <label for="address" class="label-input">
+                <span class="content-input">Address</span>
+            </label>
+        </div>
+        <div class="error">Enter Correct Address</div>
+        <div class="form">
+            <input type="number" name="mobile" autocomplete="off" required>
+            <label for="mobile" class="label-input">
+                <span class="content-input">Mobile</span>
+            </label>
+        </div>
+        <div class="error">Mobile Number incorrect format</div>
+        <div class="form">
+            <input type="password" name="password" id="passField" autocomplete="off" required >
+            <label for="password" class="label-input">
+                <span class="content-input">Password</span>
+            </label>
+            <img src="./images/visibility_off.svg" alt="" id="show-hide" onclick="togglePass()">
+        </div>
+        <div class="error">Password must be at least 6 characters</div>
+        <div class="form">
+            <input type="password" name="password" autocomplete="off" required>
+            <label for="password" class="label-input">
+                <span class="content-input">Confirm Password</span>
+            </label>
+        </div>
+        <div class="error">Passwords not matched</div>
+        <button type="submit" class="btn">Sign Up</button>
+        <div class="form-footer"><span class="right">Already have an account? <a href="./login.html">Log In </a></span></div>
+    </section>
+     <!-- =================================== footer =============================================== -->
+    
+     <footer>
+        <div> All rights reserved. 2019</div>
+    </footer>
+    <!-- =================================== script =============================================== -->
+    <script src="./main.js"></script>
+</body>
+
+</html>

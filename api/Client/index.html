@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <style>
+        .main {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div>
+            <input type="text">
+            <button>Add</button>
+        </div>
+        <div id="content">
+        </div>
+    </div>
+    <script>
+        let data = [];
+
+        document.getElementsByTagName('button')[0].addEventListener('click', event => {
+            const input = document.getElementsByTagName('input')[0];
+
+            const myHeaderS = new Headers();
+            myHeaderS.append('Content-Type', 'application/json');
+
+            fetch('http://localhost:3000/data', {
+                method: 'POST',
+                header: myHeaderS,
+                body: JSON.stringify({
+                    data: input.value
+                })
+            })
+            .then(response => response.json())
+            .then(result => {
+                console.log(result);
+            });
+
+            data.push(
+                input.value
+            );
+            renderData(data);;
+            input.value = '';
+        });
+
+        fetch('http://localhost:3000/data', {
+            method: 'GET'
+        }).then(response => response.json()).then(result => {
+            data = result;
+            renderData(data);
+        });
+
+        function renderData(data) {
+            const htmlArray = data.map(
+                item => `<div>${item}</div>`
+            );
+
+            document.getElementById('content').innerHTML = htmlArray.join('');
+        }
+    </script>
+</body>
+
+</html>

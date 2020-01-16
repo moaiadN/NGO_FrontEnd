@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {getAllCourses} from './api/course.js';
 
 let page = 1;
@@ -30,6 +31,8 @@ function renderCourses(courses) {
     document.getElementById('courseContent').innerHTML = html;
   }
 
+=======
+>>>>>>> 1f31d590ad18246fb83dab8e73e55a16d679f531
 //  ==================== Show / Hide aside Menu ====================
 let showMenu = true;
 function toggleMenu() {
@@ -42,7 +45,10 @@ function toggleMenu() {
     showMenu = !showMenu;
 }
 //  ==================== Show / Hide Password ====================
+<<<<<<< HEAD
 /*
+=======
+>>>>>>> 1f31d590ad18246fb83dab8e73e55a16d679f531
 document.getElementById("passField").addEventListener("input", () => {
 
     document.getElementById('show-hide').style.display = "block";
@@ -58,8 +64,13 @@ function togglePass() {
         document.getElementById('show-hide').src = './images/visibility_off.svg';
     }
 }
+<<<<<<< HEAD
 */
 //  ====================== Form Validation ==========================
 
 
 
+=======
+
+//  ====================== Form Validation ==========================
+>>>>>>> 1f31d590ad18246fb83dab8e73e55a16d679f531

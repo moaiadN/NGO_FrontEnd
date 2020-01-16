@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 import {getInfo} from './api/trainee.js';
 
 getInfo('', info => {
     renderProfile(info);
 });
 
+=======
+>>>>>>> 1f31d590ad18246fb83dab8e73e55a16d679f531
 let save_btn=document.getElementById('save_btn');
 let cancle_btn=document.getElementById('cancle_btn')
 let values=[];
@@ -64,6 +67,7 @@ function cancle(){
 
 }
 }
+<<<<<<< HEAD
 
 function renderProfile(traineeInfo) {
   const profileDataHtml = `
@@ -94,3 +98,5 @@ function renderProfile(traineeInfo) {
   document.getElementById('profileContent').innerHTML = profileDataHtml;
   document.getElementById('profilePhoto').innerHTML = profilePhotoHtml;
 }
+=======
+>>>>>>> 1f31d590ad18246fb83dab8e73e55a16d679f531

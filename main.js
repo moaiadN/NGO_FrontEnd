@@ -2,9 +2,10 @@ import { getAllCourses } from './api/course.js';
 // import { getCourseAbout  } from './api/courseInfo.js';
 
 let page = 1;
+let courses = [];
 
-getAllCourses(page, pageSize, courses => {
-
+getAllCourses(page, pageSize, result => {
+    courses = result;
     renderCourses(courses);
 });
 

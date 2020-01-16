@@ -1,18 +1,19 @@
-import {getAllCourses} from './api/course.js';
+import { getAllCourses } from './api/course.js';
+// import { getCourseAbout  } from './api/courseInfo.js';
 
 let page = 1;
 
 getAllCourses(page, pageSize, courses => {
- 
+
     renderCourses(courses);
 });
 
-//  ====================== Get All Courses  ==========================
+//  ====================== Get All Courses -Home- ==========================
 
 function renderCourses(courses) {
     let html = '';
-    for (let i in courses){
-        html +=  `
+    for (let i in courses) {
+        html += `
                     <div class="course-info">
                     <div class="image">
                         <img src="${courses[i].photo}" alt="">
@@ -25,13 +26,15 @@ function renderCourses(courses) {
                         <span><a href="./about_course.html">Read More</a></span>
                     </div>
                     </div>
-                `; 
-    }    
+                `;
+    }
     document.getElementById('courseContent').innerHTML = html;
-  }
+}
+//  ======================  Course page ==========================
 
 //  ==================== Show / Hide aside Menu ====================
 let showMenu = true;
+
 function toggleMenu() {
     var menuList = document.getElementById("menu-list");
     if (showMenu) {
@@ -60,6 +63,3 @@ function togglePass() {
 }
 */
 //  ====================== Form Validation ==========================
-
-
-

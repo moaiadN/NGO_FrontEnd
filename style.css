@@ -1,0 +1,731 @@
+/* =========================== global =========================== */
+* {
+    box-sizing: border-box;
+    /* font-family: "Century Gothic",sans-serif; */
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#dfe4ea, #fff);
+}
+.fix { clear: both;}
+a {text-decoration: none;}
+a:hover {color: #5fa8d3;}
+.left {float: left}
+.right {float: right;}
+
+/*=========================== NAV bar =========================== */
+.container {
+    width: 95%;
+    height: auto;
+    margin: auto;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(#fff, #dfe4ea);
+    position: fixed;
+    z-index: 1;
+}
+
+.list {
+    float: left;
+    display: block;
+}
+
+.list::after {
+    content: "";
+    clear: both;
+}
+
+.list>ul {
+    list-style: none;
+    margin: 0;
+}
+
+.list ul li {
+    display: inline-block;
+    padding: 30px 10px;
+    margin-right: 15px;
+}
+
+.list ul li a {
+    color: #252525;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 60px;
+    padding: 0 10px;
+}
+
+.list ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    margin-left: 10px;
+    transition: width .3s;
+}
+
+.list ul li a:hover::after {
+    width: 90%;
+}
+
+.regLogin {
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    text-transform: uppercase;
+    padding: 14px 10px;
+    /* display: none; */
+}
+
+.regLogin a,
+.logout a {
+    color: #0011fc;
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: bold;
+    /* border: 1px solid #5fa8d3; */
+    padding: 10px;
+}
+
+.regLogin a:hover,
+.logout a:hover {
+    color: #5fa8d3;
+    transform: translate3D(0, 0, 0);
+}
+
+.logout {
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    text-transform: uppercase;
+    padding: 14px 10px;
+    visibility: hidden;
+}
+
+/* =========Search box====== */
+.searchBox {
+    position: absolute;
+    top: 17px;
+    right: 30%;
+    border-radius: 20px;
+    padding: 2px;
+    width: 400px;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    margin-left: -40px;
+    outline: none;
+}
+
+.searchInput {
+    border: 1px solid #ddd;
+    /* background: #ccc; */
+    border-radius: 20px;
+    outline: none;
+    float: left;
+    padding-left: 15px;
+    color: #000;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 37px;
+    width: 100%;
+
+}
+
+/* ==================== */
+.menu-show {
+    display: none;
+}
+
+/* =========================== Header ===========================*/
+header {
+    width: 100%;
+    height: 277px;
+    background: #252525;
+    color: #fff;
+    position: relative;
+}
+
+/* =========================== Courses =========================== */
+.body-courses {
+    margin-top: 50px;
+    /* display: table-row-group; */
+}
+
+.course-info {
+    width: 32.3333%;
+    height: 230px;
+    background: #ffffff;
+    float: left;
+    border-radius: 5px;
+    position: relative;
+    margin-right: 1%;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    border: 1px solid #bebebe;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .3),
+        0 1px 0 rgba(255, 255, 255, .5) inset;
+}
+.course-info:hover {
+    box-shadow: 0 0 9px rgba(0, 0, 0, .5);
+}
+
+.course-info::after {
+    content: '';
+    clear: both;
+}
+
+.image {
+    width: 30%;
+    float: left;
+}
+
+.image img {
+    width: 100%;
+    height: 100px;
+    margin: 70px auto;
+    /* border: 1px solid; */
+}
+
+hr {
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: 2px solid;
+    height: 90%;
+    margin-top: 5%;
+    color: #ddd;
+    float: left;
+}
+
+.content {
+    width: 68%;
+    float: left;
+    padding-left: 10px;
+}
+
+.content h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 5px rgba(150, 0, 0, 0.4);
+}
+
+.content label {
+    font-family: serif;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+.content p {
+    width: 95%;
+    height: 110px;
+    margin-top: 7px;
+    /* text-align:justify;   */
+    overflow: hidden;
+}
+
+.content span {
+    float: right;
+    font-size: 11pt;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-weight: 900;
+}
+
+/* =========================== Information =========================== */
+.title {
+    font-size: 30px;
+    position: absolute;
+    bottom: 30px;
+    left: 450px;
+    font-weight: normal;
+    font-size: 40pt;
+    letter-spacing: 5px;
+}
+
+figure {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    border: 1px solid #f5f5f5;
+}
+
+.profile_pic {
+    width: 242px;
+    background: #fff;
+    position: relative;
+    top: -110px;
+    box-shadow: 0 5px 10px #ccc;
+    float: left;
+    border-radius: 30px 30px 0 0;
+}
+
+.profile_pic .picture {
+    width: 240px;
+    height: 240px;
+    margin-bottom: -15px;
+    border-radius: 30px 30px 0 0;
+}
+
+.profile_pic .picture img {
+    width: 200px;
+    height: 200px;
+    margin: 15px 0px 0px 20px;
+    ;
+}
+
+.profile_pic .ngo_url {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.profile_pic .ul {
+    font-weight: normal;
+    margin: 10px 15px;
+    font-style: italic;
+    font-size: 10pt;
+}
+
+.profile_pic .ul li {
+    margin-bottom: 10px;
+}
+
+.about {
+    margin-top: 35px;
+    margin-left: 280px;
+    font-weight: normal;
+    width: 40%;
+    text-align: justify;
+}
+
+.about .bio {
+    font-family: "Century Gothic";
+}
+
+/* =========================== SignUp/LogIn =========================== */
+.signup,
+.login {
+    width: 40%;
+    height: auto;
+    margin: 50px auto;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+    /* border-radius: 15px; */
+    position: relative;
+    background-color: #fff;
+}
+
+.signup h1,
+.login h1 {
+    text-align: center;
+    padding: 20px 0 0;
+    font-size: 50px;
+    ;
+}
+
+.form {
+    width: 90%;
+    position: relative;
+    height: 50px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.form input {
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.form label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+
+.form label::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.content-input {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.form input:focus+.label-input .content-input,
+.form input:valid+.label-input .content-input {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #5fa8d3;
+}
+
+.form input:focus+.label-input::after,
+.form input:valid+.label-input::after {
+    transform: translateX(0);
+}
+
+.error {
+    width: 90%;
+    margin: 5px auto 0;
+    color: red;
+    font-size: 17px;
+    visibility: hidden;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.btn {
+    width: 90%;
+    height: 50px;
+    border-radius: 15px;
+    border: 3px solid #5fa8d3;
+    margin: 30px 5% 0;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    outline: none;
+    transition: 0.3s ease;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #5fa8d3;
+}
+
+.have-acc {
+    /*    margin-bottom: 20px;*/
+    padding: 20px 0;
+    width: 95%;
+    text-align: right;
+}
+
+.form-footer {
+    width: 90%;
+    margin: 0px auto;
+    padding: 20px;
+    overflow: hidden;
+}
+#show-hide {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* =========================== Footer =========================== */
+.footer {
+    width: 100%;
+    height: 60px;
+    background: #252525;
+    color: #fff;
+    text-align: center;
+    float: left;
+    /* line-height: 10; */
+}
+
+.footer-content {
+    margin-top: 25px;
+}
+
+/* =========================== Responsive =========================== */
+
+@media only screen and (max-width: 600px) {
+    .list {
+        display: none;
+    }
+    .container {
+        width: 100%;
+    }
+
+    .course-info {
+        width: 95%;
+        margin: 5px 2.5%;
+    }
+
+    header .title {
+        top: 20px;
+        left: 112.5px;
+    }
+
+    .profile_pic {
+        position: relative;
+        top: -180px;
+        left: 112.5px;
+    }
+
+    .about {
+        position: absolute;
+        top: 500px;
+        left: -100px;
+    }
+
+    .about p {
+        width: 240px;
+    }
+
+    .searchBox {
+        position: absolute;
+        top: 15px;
+        right: 3%;
+        width: 75%;
+        z-index: -1;
+    }
+
+    .searchInput {
+        width: 100%;
+        /* margin-left: -250px; */
+    }
+
+    .signup,
+    .login {
+        width: 90%;
+    }
+
+    /* =========================== Toggle menu =========================== */
+    .menu-show {
+        color: #797979;
+        font-size: 35px;
+        width: 35px;
+        height: 40px;
+        margin: 15px 20px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-list {
+        background: rgba(0, 0, 0, .7);
+        width: 229px;
+        height: 110vh;
+        margin-top: -72px;
+        margin-left: -8px;
+        display: none;
+    }
+
+    .menu-list ul {
+        list-style: none;
+        padding-top: 100px;
+    }
+
+    .menu-list ul li {
+        list-style: none;
+        text-decoration: none;
+        padding-bottom: 20px;
+    }
+
+    .menu-list ul li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 60px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        /* transition: all .5s cubic-bezier(0.4, 0, 1, 1); */
+    }
+
+    .menu-list ul li a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        margin-left: 10px;
+        /* transition: width .3s; */
+        transition: all .5s cubic-bezier(0.4, 0, 1, 1);
+    }
+
+    .menu-list ul li a:hover::after {
+        width: 90%;
+    }
+}
+
+/* =========================== max 600px =========================== */
+
+@media only screen and (min-width: 600px) {
+    .list {
+        display: none;
+    }
+    .container {
+        width: 100%;
+    }
+    .body-courses {
+        width: 90%;
+        margin: 50px auto;
+    }
+    .course-info {
+        width: 48%;
+        margin: 5px;
+    }
+    .searchBox {
+        position: absolute;
+        top: 15px;
+        right: 2%;
+        width: 63%;
+        /* z-index: -1; */
+    }
+    /* ====================== Toggle menu ========================= */
+    .menu-show {
+        color: #797979;
+        font-size: 35px;
+        width: 35px;
+        height: 40px;
+        margin: 15px 20px;
+        display: block;
+        cursor: pointer;
+    }
+    .menu-list {
+        background: rgba(0, 0, 0, .7);
+        width: 229px;
+        height: 110vh;
+        margin-top: -72px;
+        margin-left: -8px;
+        display: none;
+    }
+    .menu-list ul {
+        list-style: none;
+        padding-top: 100px;
+    }
+    .menu-list ul li {
+        list-style: none;
+        text-decoration: none;
+        padding-bottom: 5px;
+        width: 105px;
+    }
+    .menu-list ul li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 60px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .menu-list ul li a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        transition: all .5s cubic-bezier(0.4, 0, 1, 1);
+    }
+    .menu-list ul li a:hover::after {
+        width: 100%;
+    }
+}
+
+/* =========================== 768px =========================== */
+@media only screen and (min-width: 768px) {
+    
+    .container {
+        width: 100%;
+    }
+
+    .list {
+        margin-left: 0;
+    }
+
+    .list>ul>li {
+        padding: 10px;
+        margin-right: -10px;
+    }
+    .body-courses {
+        width: 100%;
+        margin: 50px auto;
+    }
+    .course-info {
+        width: 48%;
+        margin: 5px 5px;
+    }
+
+    header .title {
+        top: 20px;
+        left: 225px;
+    }
+
+    .profile_pic {
+        position: relative;
+        top: -180px;
+        left: 225px;
+    }
+
+    .about {
+        position: absolute;
+        top: 500px;
+        left: 25px;
+    }
+
+    .signup,
+    .login {
+        width: 80%;
+    }
+
+}
+
+/* =========================== 992px =========================== */
+@media only screen and (min-width: 992px) {
+    .list {
+        display: block;
+    }
+    .menu-show {
+        display: none;
+    }
+    .searchBox {
+            width: 35%;
+    }
+    .course-info {
+        width: 32%;
+    }
+    .searchBox {
+        position: absolute;
+        top: 15px;
+        right: 20%;
+    }
+    .signup, .login {
+        width: 50%;
+}

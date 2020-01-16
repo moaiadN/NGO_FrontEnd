@@ -1,6 +1,8 @@
 import {getAllCourses} from './api/course.js';
 
-getAllCourses(courses => {
+let page = 1;
+
+getAllCourses(page, pageSize, courses => {
  
     renderCourses(courses);
 });

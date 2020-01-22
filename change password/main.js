@@ -1,6 +1,7 @@
 const form = document.getElementById('form');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
+const oldpassword = document.getElementById('oldpassword');
 
 form.addEventListener('submit', e => {
 	e.preventDefault();
@@ -13,6 +14,7 @@ function checkInputs() {
 
 	const passwordValue = password.value.trim();
 	const password2Value = password2.value.trim();
+	const oldpasswordValue = oldpassword.value.trim();
 	
 
 	
@@ -28,6 +30,15 @@ function checkInputs() {
 		setErrorFor(password2, 'Passwords does not match');
 	} else{
 		setSuccessFor(password2);
+	}
+
+
+	if(oldpasswordValue === '') {
+		setErrorFor(password2, 'old Password cannot be blank');
+	} else if(passwordValue == oldpasswordValue) {
+		setErrorFor(password, 'Passwords does not match');
+	} else{
+		setSuccessFor(oldpassword);
 	}
 }
 

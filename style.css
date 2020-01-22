@@ -248,6 +248,23 @@ hr {
     font-weight: 900;
 }
 
+.show_courses{
+    background: #252525;
+    border-radius: 3px;
+    color: white;
+    margin: 2px;
+    padding: 10px;
+    position: relative;
+    left: 46%;
+    display: inline-block;
+    transition: all 0.25s ease-out;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* .show_courses:hidden{
+    display: none;
+} */
+
 /* =========================== Information =========================== */
 .title {
     font-size: 30px;
@@ -728,4 +745,5 @@ input[type="number"] {
     }
     .signup, .login {
         width: 50%;
+}
 }

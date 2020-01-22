@@ -3,12 +3,24 @@ import { getAllCourses } from './api/course.js';
 
 let page = 1;
 let courses = [];
+let pageSize = 6;
 
 getAllCourses(page, pageSize, result => {
     courses = result;
     renderCourses(courses);
 });
 
+ document.getElementById('show').addEventListener('click' , function(event){
+     event.preventDefault();
+     
+    page++;
+    console.log(page);
+    getAllCourses(page, pageSize, result => {
+        courses = courses.concat(result);
+        console.log(courses);
+        renderCourses(courses);
+    });
+          });
 //  ====================== Get All Courses -Home- ==========================
 
 function renderCourses(courses) {
@@ -45,6 +57,8 @@ function toggleMenu() {
     }
     showMenu = !showMenu;
 }
+
+         
 //  ==================== Show / Hide Password ====================
 /*
 document.getElementById("passField").addEventListener("input", () => {

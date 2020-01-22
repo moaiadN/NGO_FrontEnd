@@ -5,7 +5,7 @@ function getAllCourses(page, pageSize, callback) {
     //     }
     // });
     if (callback) {
-        response = [];
+        let response = [];
         if(page === 1) {
             response = [
                 {

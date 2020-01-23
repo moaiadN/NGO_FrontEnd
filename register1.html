@@ -12,8 +12,7 @@
 <body>
     <nav>
         <div class="container">
-        
-            <span class="menu-show" onclick="toggleMenu()">&#9776</span>
+            <span class="menu-show" id="showMenu">&#9776</span>
             <div class="menu-list" id="menu-list">
                 <ul>
                     <li><a href="./index.html" class="active"> home </a></li>
@@ -30,19 +29,11 @@
                     <li><a href="./trainee-profile.html"> profile </a></li>
                 </ul>
                 <div class="regLogin">
-                    <a href="./register.html"> Sign up </a> |
+                    <a href="./signup.html"> Sign up </a> |
                     <a href="./login.html"> login </a>
                 </div>
-                <div class="logout"><a href="./index.html"> logout </a></div>
+                <div class="logout"><a href="./register.html"> logout </a></div>
             </div>
-            <!-- ============================= -->
-            <div class="searchBox">
-                <input class="searchInput" type="text" name="" id="searchInput" placeholder="Search">
-                <button class="searchButton" href="#" id="searchButton">
-                    <img src="./images/search-24px.svg">
-                </button>
-            </div>
-        </div>
     </nav>
     <!-- =============================================================================================== -->
     <header style="background: none;margin-bottom: -200px;">
@@ -50,31 +41,13 @@
     </header>
     <!-- ================================================================================================ -->
     <div class="container">
-        <div class="body-courses" id="courseContent">
-            <!-- <div class="course-info">
-                <div class="image">
-                    <img src="./images/HTML5.png" alt="">
-                </div>
-                <hr>
-                <div class="content">
-                    <h3>HTML Course</h3>
-                    <label>Trainer :<a href="./trainer.html"> Trainer Name</a></label>
-                    <p><strong>Hypertext Markup Language (HTML)</strong> is the standard markup language for documents
-                        designed to be displayed in a web browser. the standard markup language for documents</p>
-                    <span><a href="./about_course.html">Read More</a></span>
-                </div>
-            </div>
-            -->
-            <!-- ======================================================== -->
+        <div class="body-courses" id="body-courses">
+
         </div>
     </div>
-    
-    <div class="show_courses" id="show_courses">
-        <a style="color: white;" href ="#" id="show"> Show More </a>
-    </div>
-    
-    <!-- =================================== footer =============================================== -->
-    
+
+    <!-- =================================== foot bher =============================================== -->
+
     <footer class="footer">
         <div class="footer-content"> All rights reserved. 2019</div>
     </footer>

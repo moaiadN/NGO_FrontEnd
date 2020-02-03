@@ -17,6 +17,7 @@ function renderCorseProfile(courseInfo) {
                     <li>${courseInfo.courseTime}</li>
                     <li>${courseInfo.address}</li>
                     <li>${courseInfo.seats}</li>
+                    <div><a href="#" id="enrollCourse" onClick="Enroll()">Enroll in Course</a></div>
                 </ul>
     `;
     const aboutCourseHtml = `

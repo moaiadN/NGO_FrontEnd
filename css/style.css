@@ -13,14 +13,12 @@ a {text-decoration: none;}
 a:hover {color: #5fa8d3;}
 .left {float: left}
 .right {float: right;}
-
 /*=========================== NAV bar =========================== */
 .container {
     width: 95%;
     height: auto;
     margin: auto;
 }
-
 nav {
     width: 100%;
     height: 80px;
@@ -28,28 +26,23 @@ nav {
     position: fixed;
     z-index: 1;
 }
-
 .list {
     float: left;
     display: block;
 }
-
 .list::after {
     content: "";
     clear: both;
 }
-
 .list>ul {
     list-style: none;
     margin: 0;
 }
-
 .list ul li {
     display: inline-block;
     padding: 30px 10px;
     margin-right: 15px;
 }
-
 .list ul li a {
     color: #252525;
     text-transform: uppercase;
@@ -58,7 +51,6 @@ nav {
     line-height: 60px;
     padding: 0 10px;
 }
-
 .list ul li a::after {
     content: '';
     display: block;
@@ -68,11 +60,9 @@ nav {
     margin-left: 10px;
     transition: width .3s;
 }
-
 .list ul li a:hover::after {
     width: 90%;
 }
-
 .regLogin {
     position: absolute;
     top: 17px;
@@ -81,7 +71,6 @@ nav {
     padding: 14px 10px;
     /* display: none; */
 }
-
 .regLogin a,
 .logout a {
     color: #0011fc;
@@ -91,22 +80,19 @@ nav {
     /* border: 1px solid #5fa8d3; */
     padding: 10px;
 }
-
 .regLogin a:hover,
 .logout a:hover {
     color: #5fa8d3;
     transform: translate3D(0, 0, 0);
 }
-
 .logout {
     position: absolute;
     top: 17px;
     right: 15px;
     text-transform: uppercase;
     padding: 14px 10px;
-    visibility: hidden;
+    /* display: none; */
 }
-
 /* =========Search box====== */
 .searchBox {
     position: absolute;
@@ -116,7 +102,6 @@ nav {
     padding: 2px;
     width: 400px;
 }
-
 .searchButton {
     color: white;
     float: right;
@@ -131,7 +116,6 @@ nav {
     margin-left: -40px;
     outline: none;
 }
-
 .searchInput {
     border: 1px solid #ddd;
     /* background: #ccc; */
@@ -144,14 +128,11 @@ nav {
     transition: 0.4s;
     line-height: 37px;
     width: 100%;
-
 }
-
 /* ==================== */
 .menu-show {
     display: none;
 }
-
 /* =========================== Header ===========================*/
 header {
     width: 100%;
@@ -160,13 +141,11 @@ header {
     color: #fff;
     position: relative;
 }
-
 /* =========================== Courses =========================== */
 .body-courses {
     margin-top: 50px;
     /* display: table-row-group; */
 }
-
 .course-info {
     width: 32.3333%;
     height: 230px;
@@ -184,24 +163,20 @@ header {
 .course-info:hover {
     box-shadow: 0 0 9px rgba(0, 0, 0, .5);
 }
-
 .course-info::after {
     content: '';
     clear: both;
 }
-
 .image {
     width: 30%;
     float: left;
 }
-
 .image img {
     width: 100%;
     height: 100px;
     margin: 70px auto;
     /* border: 1px solid; */
 }
-
 hr {
     border-top: none;
     border-bottom: none;
@@ -212,25 +187,21 @@ hr {
     color: #ddd;
     float: left;
 }
-
 .content {
     width: 68%;
     float: left;
     padding-left: 10px;
 }
-
 .content h3 {
     text-align: center;
     margin-bottom: 10px;
     text-shadow: 0 2px 5px rgba(150, 0, 0, 0.4);
 }
-
 .content label {
     font-family: serif;
     font-style: italic;
     margin-left: 20px;
 }
-
 .content p {
     width: 95%;
     height: 110px;
@@ -238,7 +209,6 @@ hr {
     /* text-align:justify;   */
     overflow: hidden;
 }
-
 .content span {
     float: right;
     font-size: 11pt;
@@ -247,7 +217,6 @@ hr {
     right: 15px;
     font-weight: 900;
 }
-
 .show_courses{
     background: #252525;
     border-radius: 3px;
@@ -260,11 +229,9 @@ hr {
     transition: all 0.25s ease-out;
     -webkit-font-smoothing: antialiased;
 }
-
 /* .show_courses:hidden{
     display: none;
 } */
-
 /* =========================== Information =========================== */
 .title {
     font-size: 30px;
@@ -275,14 +242,12 @@ hr {
     font-size: 40pt;
     letter-spacing: 5px;
 }
-
 figure {
     width: 80%;
     height: 100vh;
     margin: auto;
     border: 1px solid #f5f5f5;
 }
-
 .profile_pic {
     width: 242px;
     background: #fff;
@@ -292,39 +257,33 @@ figure {
     float: left;
     border-radius: 30px 30px 0 0;
 }
-
 .profile_pic .picture {
     width: 240px;
     height: 240px;
     margin-bottom: -15px;
     border-radius: 30px 30px 0 0;
 }
-
 .profile_pic .picture img {
     width: 200px;
     height: 200px;
     margin: 15px 0px 0px 20px;
     ;
 }
-
 .profile_pic .ngo_url {
     text-align: center;
     font-style: italic;
     margin-bottom: 15px;
     font-weight: bold;
 }
-
 .profile_pic .ul {
     font-weight: normal;
     margin: 10px 15px;
     font-style: italic;
     font-size: 10pt;
 }
-
 .profile_pic .ul li {
     margin-bottom: 10px;
 }
-
 .about {
     margin-top: 35px;
     margin-left: 280px;
@@ -332,11 +291,9 @@ figure {
     width: 40%;
     text-align: justify;
 }
-
 .about .bio {
     font-family: "Century Gothic";
 }
-
 /* =========================== SignUp/LogIn =========================== */
 .signup,
 .login {
@@ -348,7 +305,6 @@ figure {
     position: relative;
     background-color: #fff;
 }
-
 .signup h1,
 .login h1 {
     text-align: center;
@@ -356,7 +312,6 @@ figure {
     font-size: 50px;
     ;
 }
-
 .form {
     width: 90%;
     position: relative;
@@ -364,7 +319,6 @@ figure {
     margin: auto;
     overflow: hidden;
 }
-
 .form input {
     width: 100%;
     height: 100%;
@@ -374,7 +328,6 @@ figure {
     outline: none;
     background: transparent;
 }
-
 .form label {
     position: absolute;
     bottom: 0;
@@ -384,7 +337,6 @@ figure {
     pointer-events: none;
     border-bottom: 1px solid black;
 }
-
 .form label::after {
     content: "";
     position: absolute;
@@ -396,26 +348,22 @@ figure {
     transform: translateX(-100%);
     transition: transform 0.3s ease;
 }
-
 .content-input {
     position: absolute;
     bottom: 0;
     left: 0;
     transition: all 0.3s ease;
 }
-
 .form input:focus+.label-input .content-input,
 .form input:valid+.label-input .content-input {
     transform: translateY(-150%);
     font-size: 14px;
     color: #5fa8d3;
 }
-
 .form input:focus+.label-input::after,
 .form input:valid+.label-input::after {
     transform: translateX(0);
 }
-
 .error {
     width: 90%;
     margin: 5px auto 0;
@@ -423,16 +371,13 @@ figure {
     font-size: 17px;
     visibility: hidden;
 }
-
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
-
 input[type="number"] {
     -moz-appearance: textfield;
 }
-
 .btn {
     width: 90%;
     height: 50px;
@@ -447,18 +392,15 @@ input[type="number"] {
     background: transparent;
     cursor: pointer;
 }
-
 .btn:hover {
     background: #5fa8d3;
 }
-
 .have-acc {
     /*    margin-bottom: 20px;*/
     padding: 20px 0;
     width: 95%;
     text-align: right;
 }
-
 .form-footer {
     width: 90%;
     margin: 0px auto;
@@ -472,7 +414,6 @@ input[type="number"] {
     cursor: pointer;
     display: none;
 }
-
 /* =========================== Footer =========================== */
 .footer {
     width: 100%;
@@ -483,13 +424,10 @@ input[type="number"] {
     float: left;
     /* line-height: 10; */
 }
-
 .footer-content {
     margin-top: 25px;
 }
-
 /* =========================== Responsive =========================== */
-
 @media only screen and (max-width: 600px) {
     .list {
         display: none;
@@ -497,33 +435,27 @@ input[type="number"] {
     .container {
         width: 100%;
     }
-
     .course-info {
         width: 95%;
         margin: 5px 2.5%;
     }
-
     header .title {
         top: 20px;
         left: 112.5px;
     }
-
     .profile_pic {
         position: relative;
         top: -180px;
         left: 112.5px;
     }
-
     .about {
         position: absolute;
         top: 500px;
         left: -100px;
     }
-
     .about p {
         width: 240px;
     }
-
     .searchBox {
         position: absolute;
         top: 15px;
@@ -531,17 +463,14 @@ input[type="number"] {
         width: 75%;
         z-index: -1;
     }
-
     .searchInput {
         width: 100%;
         /* margin-left: -250px; */
     }
-
     .signup,
     .login {
         width: 90%;
     }
-
     /* =========================== Toggle menu =========================== */
     .menu-show {
         color: #797979;
@@ -552,7 +481,6 @@ input[type="number"] {
         display: block;
         cursor: pointer;
     }
-
     .menu-list {
         background: rgba(0, 0, 0, .7);
         width: 229px;
@@ -561,18 +489,15 @@ input[type="number"] {
         margin-left: -8px;
         display: none;
     }
-
     .menu-list ul {
         list-style: none;
         padding-top: 100px;
     }
-
     .menu-list ul li {
         list-style: none;
         text-decoration: none;
         padding-bottom: 20px;
     }
-
     .menu-list ul li a {
         text-decoration: none;
         color: #fff;
@@ -584,7 +509,6 @@ input[type="number"] {
         cursor: pointer;
         /* transition: all .5s cubic-bezier(0.4, 0, 1, 1); */
     }
-
     .menu-list ul li a::after {
         content: '';
         display: block;
@@ -595,14 +519,11 @@ input[type="number"] {
         /* transition: width .3s; */
         transition: all .5s cubic-bezier(0.4, 0, 1, 1);
     }
-
     .menu-list ul li a:hover::after {
         width: 90%;
     }
 }
-
 /* =========================== max 600px =========================== */
-
 @media only screen and (min-width: 600px) {
     .list {
         display: none;
@@ -675,18 +596,14 @@ input[type="number"] {
         width: 100%;
     }
 }
-
 /* =========================== 768px =========================== */
 @media only screen and (min-width: 768px) {
-    
     .container {
         width: 100%;
     }
-
     .list {
         margin-left: 0;
     }
-
     .list>ul>li {
         padding: 10px;
         margin-right: -10px;
@@ -699,31 +616,25 @@ input[type="number"] {
         width: 48%;
         margin: 5px 5px;
     }
-
     header .title {
         top: 20px;
         left: 225px;
     }
-
     .profile_pic {
         position: relative;
         top: -180px;
-        left: 225px;
+        left: 0;
     }
-
     .about {
         position: absolute;
-        top: 500px;
-        left: 25px;
+        top: 265px;
+        left: 150px;
     }
-
     .signup,
     .login {
         width: 80%;
     }
-
 }
-
 /* =========================== 992px =========================== */
 @media only screen and (min-width: 992px) {
     .list {

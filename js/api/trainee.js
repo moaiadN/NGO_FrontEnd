@@ -18,7 +18,13 @@ function login(email, password, callback) {
     // });
 
     if (callback) {
-        callback(1, 'klfshdklsfhkdsh;sfjslkjhjfk;dsjfkljldfjs;fj;');
+        // callback(1,email , password, token);
+        let token = 'klfshdklsfhkdshsfjslkjhjfkdsjfkljldfjsfj';
+        localStorage.setItem('token', token)
+        callback({
+            email: 'asd@as.aa',
+            password: '123',
+        });
     }
 }
 

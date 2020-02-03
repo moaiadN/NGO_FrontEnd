@@ -45,7 +45,7 @@ function getAllCourses(page, pageSize, callback) {
                 },
                 {
                     id:6,
-                    courseTitle:'First Course',
+                    courseTitle:'Sixth Course',
                     trainerId: 11,
                     trainerName: 'Bashar',
                     photo: './images/HTML5.png'
@@ -90,7 +90,7 @@ function getAllCourses(page, pageSize, callback) {
                 },
                 {
                     id:11,
-                    courseTitle:'First Course',
+                    courseTitle:'Sixth Course',
                     trainerId: 11,
                     trainerName: 'Bashar',
                     photo: './images/HTML5.png'

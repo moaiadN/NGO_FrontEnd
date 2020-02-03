@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/passChange.css">
+    <title>Change password</title>
+</head>
+<body>
+    <nav>
+        <span class="menu-show" id="showMenu">&#9776</span>
+        <div class="menu-list" id="menu-list">
+            <ul>
+                <li><a href="./index.html" class="active"> home </a></li>
+                <li><div class="logout"><a href="./login/index.html"> logout </a></div></li>
+            </ul>
+        </div>
+        <!-- ================== -->
+        <div class="list">
+            <ul>
+                <li><a href="./index.html" class="active"> home </a></li>
+                <!-- <li><a href="./trainee-profile.html"> profile </a></li> -->
+            </ul>
+            <!-- <div class="regLogin">
+                <a href="./register.html"> Sign up </a>
+                <a href="./login.html"> login </a>
+            </div> -->
+            <div class="logout"><a href="./login/index.html"> logout </a></div>
+        </div>
+    </nav>
+    <!-- ==================================== -->
+    <div class="container">
+        <div class="header">
+            <h2>Change password</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <!-- <label for="username">Old Password</label> -->
+                <input type="password" placeholder="Old Password" id="oldPassword" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <!-- <label for="username">Password</label> -->
+                <input type="password" placeholder="Password" id="password" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <img src="./images/visibility_off.svg" alt="" id="show-hide" onclick="togglePass()">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <!-- <label for="username">Confirm Password</label> -->
+                <input type="password" placeholder="Confirm Password" id="password2" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <button type="submit" id="submit">save</button>
+
+        </form>
+    </div>
+<!-- ============================== Footer ==================== -->
+    <footer class="footer">
+        <div class="footer-content"> All rights reserved. 2019</div>
+    </footer>
+</body>
+<script>
+    // if(!localStorage.getItem('password')){
+    //   localStorage.setItem('password', 'pass');
+    // }
+    // function changePassBtnClick(){
+    //   localStorage.setItem('password', document.getElementById('changePass').value);
+    //   alert('Password changed');
+    // }
+    // function loginBtnClick(){
+    //   if(document.getElementById('login').value == localStorage.getItem('password')){
+    //     alert('Correct Login');
+    //   }else{
+    //     alert('Wrong Password');
+    //   }
+    // }
+</script>
+<script src="./js/passChange.js"></script>
+</html>

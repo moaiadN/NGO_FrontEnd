@@ -1,3 +1,9 @@
+//  ================= Nav ===============
+import { renderHeader } from "./api/header.js";
+let token = null;
+token = localStorage.getItem('token');
+renderHeader('list', token !== null);
+// =============================================
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const Address = document.getElementById('Address');
@@ -63,7 +69,7 @@ function setSuccessFor(input) {
 	formControl.className = 'form-control success';
 }
 function isEmail(email) {
-	return /^((["^<>()\[\]\\.,;:\s@"]+(\.["^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+	return /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
 //  ==================== Show / Hide aside Menu ====================
 let showMenu = true;
@@ -80,7 +86,7 @@ document.getElementById('showMenu').addEventListener('click', function toggleMen
 document.getElementById("password").addEventListener("input", () => {
     document.getElementById('show-hide').style.display = "block";
 });
-function togglePass() {
+document.getElementById("show-hide").addEventListener("click",function togglePass() {
     var showPass = document.getElementById("password");
     if (showPass.type === "password") {
         showPass.type = "text";
@@ -89,4 +95,4 @@ function togglePass() {
         showPass.type = "password";
         document.getElementById('show-hide').src = './images/visibility_off.svg';
     }
-}
+});

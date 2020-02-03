@@ -122,7 +122,7 @@ body {
 #show-hide{
 	display: none;
     position: absolute;
-    top: 37px;
+    top: 10px;
 	right: 10px;
 	cursor: pointer;
 }

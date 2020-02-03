@@ -1,7 +1,14 @@
+
+// =============================================
 import {getInfo} from './api/trainee.js';
 getInfo('', info => {
     renderProfile(info);
 });
+//  ================= Nav ===============
+import { renderHeader } from "./api/header.js";
+let token = null;
+token = localStorage.getItem('token');
+renderHeader('list', token !== null);
 // ===========================
 let save_btn=document.getElementById('save_btn');
 let cancel_btn=document.getElementById('cancel_btn')

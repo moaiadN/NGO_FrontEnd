@@ -1,8 +1,7 @@
-import { renderHeader } from "./header.js";
-
+//  ================= Nav ===============
+import { renderHeader } from "./api/header.js";
 let token = null;
 token = localStorage.getItem('token');
-
 renderHeader('list', token !== null);
 
 //  ==================== Search Box ====================

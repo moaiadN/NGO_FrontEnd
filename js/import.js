@@ -28,14 +28,11 @@ function renderCourses(courses) {
     for (let i in courses) {
         html += `
                     <div class="course-info">
-                    <div class="image">
-                        <img src="${courses[i].photo}" alt="">
-                    </div>
                     <hr>
                     <div class="content">
                         <h3>${courses[i].courseTitle}</h3>
                         <label>Trainer :<a href="./trainer.html"> ${courses[i].trainerName} </a></label>
-                        <p><b>Hypertext Markup Language (HTML)</b> is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. </p>
+                        <p><b>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser.</p>
                         <span><a href="./about_course.html">Read More</a></span>
                     </div>
                     </div>

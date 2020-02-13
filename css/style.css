@@ -83,11 +83,11 @@ nav {
 }
 .regLogin a:hover,
 .logout a:hover{
-    color: #ffa600;
+    color: #0099ff;
 }
 .logout:hover {
     transition: 1s ease-in-out;
-    border: 1px solid #ffa600;
+    border: 1px solid #0099ff;
 }
 .logout {
     position: absolute;
@@ -194,9 +194,9 @@ hr {
     float: left;
 }
 .content {
-    width: 68%;
-    float: left;
-    padding-left: 10px;
+    /* width: 68%;
+    float: left; */
+    padding-left: 15px;
 }
 .content h3 {
     text-align: center;
@@ -224,17 +224,34 @@ hr {
     font-weight: 900;
 }
 .show_courses{
-    background: #252525;
-    border-radius: 3px;
-    color: white;
-    margin: 2px;
-    padding: 10px;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    float: left;
+    /* background-color: turquoise; */
     position: relative;
-    left: 46%;
-    display: inline-block;
-    transition: all 0.25s ease-out;
-    -webkit-font-smoothing: antialiased;
+   
 }
+.show_courses svg{
+    width: 45px;
+    height: 45px;
+    padding: 3px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    left: 47%;
+    fill: #000;
+    transition: 1s ease-in-out;
+    box-shadow: 0 2px 5px rgba(150, 0, 0, 0.4);
+}
+svg:hover {
+    fill: #0011fc;
+    border: 2px solid #0011fc;
+    box-shadow: 0 2px 5px rgba(150, 0, 0, 0.4);
+    /* transform: rotate(360deg); */
+    margin-top: 5px;
+  }
 /* .show_courses:hidden{
     display: none;
 } */

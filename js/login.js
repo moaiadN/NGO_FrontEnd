@@ -50,8 +50,9 @@ function loginn() {
 	// var logout = ;
 	if (email === "asd@as.aa" && password === "123") {
 		document.getElementById('regLogin').style.display= 'none';
+		window.location.href = "./index.html";
 		document.getElementById('logout').style.display= 'block';
-		window.location = "./index.html";
+		
 	} 
 }
 

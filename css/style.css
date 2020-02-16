@@ -153,8 +153,8 @@ header {
     /* display: table-row-group; */
 }
 .course-info {
-    width: 32.3333%;
-    height: 230px;
+    width: 20%;
+    height: 180px;
     background: #ffffff;
     float: left;
     border-radius: 5px;
@@ -196,7 +196,7 @@ hr {
 .content {
     /* width: 68%;
     float: left; */
-    padding-left: 15px;
+    padding: 5px 10px;;
 }
 .content h3 {
     text-align: center;
@@ -206,22 +206,31 @@ hr {
 .content label {
     font-family: serif;
     font-style: italic;
-    margin-left: 20px;
+    margin-left: 70px;
 }
 .content p {
     width: 95%;
-    height: 110px;
+    height: 39px;
     margin-top: 7px;
-    /* text-align:justify;   */
     overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
 }
 .content span {
     float: right;
     font-size: 11pt;
     position: absolute;
-    bottom: 10px;
-    right: 15px;
+    bottom: 15px;
+    right: 3px;
     font-weight: 900;
+    border: 2px solid #0034f3;
+    padding: 5px 30%;
+    border-radius: 7px;
+    width: 97%;
+    background: #0034f3;
+}
+.content span a{
+    color: #fff;
 }
 .show_courses{
     width: 100%;
@@ -670,7 +679,7 @@ input[type="number"] {
             width: 35%;
     }
     .course-info {
-        width: 32%;
+        width: 20%;
     }
     .searchBox {
         position: absolute;

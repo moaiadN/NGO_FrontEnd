@@ -14,6 +14,7 @@ const password2 = document.getElementById('password2');
 form.addEventListener('submit', e => {
 	e.preventDefault();
 	checkInputs();
+	register()
 });
 function checkInputs() {
 	// trim to remove the whitespaces
@@ -96,3 +97,27 @@ document.getElementById("show-hide").addEventListener("click",function togglePas
         document.getElementById('show-hide').src = './images/visibility_off.svg';
     }
 });
+
+
+let register=document.getElementById("register").addEventListener("click",e=>{
+
+
+	const username = document.getElementById('username').value;
+	const Address = document.getElementById('Address').value;
+	const mobile = document.getElementById('mobile').value;
+	const email = document.getElementById('email').value;
+	const password = document.getElementById('password').value;
+	
+	fetch("http://localhost:3000/trainee/registerTrainee",{
+		method:"POST",
+		headers:{
+			"Content-Type":"Application/json",
+		},
+		body:JSON.stringify({email:email,password:password,name:username,address:Address,phone:mobile})
+	}).then(re=>re.json()).then(data=>{
+			console.log(data.status)
+	})
+
+
+
+})

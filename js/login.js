@@ -42,18 +42,37 @@ function checkInputs() {
 }
 // ============================================
 function loginn() {
-	let token = 'klfshdklsfhkdshsfjslkjhjfkdsjfkljldfjsfj';
-	localStorage.setItem('token', token);
 	var email = document.getElementById('email').value;
 	var password = document.getElementById("password").value;
-	// var regLogin = ;
-	// var logout = ;
-	if (email === "asd@as.aa" && password === "123") {
-		document.getElementById('regLogin').style.display= 'none';
-		window.location.href = "./index.html";
-		document.getElementById('logout').style.display= 'block';
+	fetch("http://localhost:3000/trainee/loginTrainee",{
+		method:"POST",
+		headers:{
+			"Content-Type":"Application/json",
+		},
+		body:JSON.stringify({email:email,password:password})
+	}).then(re=>re.json()).then(data=>{
+		if(data.status==404){
+			var email = document.getElementById('email').style.border="2px solid red";
+			var password = document.getElementById("password").style.border="2px solid red";
+		}else{
+			localStorage.setItem("token",data.token)
+			window.location.href="../index.html"
+		}
+
+	})
+
+
+
+	// let token = 'klfshdklsfhkdshsfjslkjhjfkdsjfkljldfjsfj';
+	// localStorage.setItem('token', token);
+	// // var regLogin = ;
+	// // var logout = ;
+	// if (email === "asd@as.aa" && password === "123") {
+	// 	document.getElementById('regLogin').style.display= 'none';
+	// 	window.location.href = "./index.html";
+	// 	document.getElementById('logout').style.display= 'block';
 		
-	} 
+	// } 
 }
 
 //  ==================== Show / Hide aside Menu ====================

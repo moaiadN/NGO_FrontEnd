@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./style.CSS">
+    <link rel="stylesheet" href="./css/style.CSS">
     <title>Sign Up</title>
 </head>
 
 <body>
     <nav>
         <!-- ============================= Toggle Menu ============================= -->
-        <span class="menu-show" onclick="toggleMenu()">&#9776</span>
+        <span class="menu-show" id="showMenu">&#9776</span>
         <div class="menu-list" id="menu-list">
             <ul>
                 <li><a href="./index.html" class="active"> home </a></li>
@@ -23,16 +23,15 @@
             </ul>
         </div>
         <!-- ============================= List Menu ============================= -->
-        <div class="list">
-            <ul>
+        <div class="list" id="list">
+            <!-- <ul>
                 <li><a href="./index.html" class="active"> home </a></li>
                 <li><a href="./trainee-profile.html"> profile </a></li>
             </ul>
             <div class="regLogin">
-                <!-- <a href="./signup.html"> Sign up </a> | -->
                 <a href="./login.html"> login </a>
             </div>
-            <div class="logout"><a href="./register.html"> logout </a></div>
+            <div class="logout"><a href="./register.html"> logout </a></div> -->
         </div>
         <!-- ============================= searchBox ============================= -->
         <div class="searchBox">
@@ -79,7 +78,7 @@
         </div>
         <div class="error">Mobile Number incorrect format</div>
         <div class="form">
-            <input type="password" name="password" id="passField" autocomplete="off" required id="password">
+            <input type="password" name=""  id="password"  required>
             <label for="password" class="label-input">
                 <span class="content-input">Password</span>
             </label>
@@ -87,7 +86,7 @@
         </div>
         <div class="error">Password must be at least 6 characters</div>
         <div class="form">
-            <input type="password" name="password" autocomplete="off" required>
+            <input type="password" name="" required>
             <label for="password" class="label-input">
                 <span class="content-input">Confirm Password</span>
             </label>
@@ -98,13 +97,11 @@
         </div>
     </section>
     <!-- =================================== footer =============================================== -->
-
-    <footer>
-        <div> All rights reserved. 2019</div>
-    </footer>
+        <footer class="footer">
+            <div class="footer-content"> All rights reserved. 2019</div>
+        </footer>
     <!-- =================================== script =============================================== -->
-    <script src="./main.js"></script>
-    <script src="./test.js"></script>
+    <script src="./js/main.js" type="module"></script>
 </body>
 
 </html>

@@ -8,58 +8,69 @@
     <title>sign up</title>
 </head>
 <body>
+    <nav>
+        <span class="menu-show" id="showMenu">&#9776</span>
+        <div class="menu-list" id="menu-list">
+            <ul>
+                <li><a href="./index.html" class="active"> home </a></li>
+                <li><a href="./login.html"> login </a></li>
+            </ul>
+        </div>
+        <!-- ================== -->
+        <div class="list" id="list">
+            <!-- <ul>
+                <li><a href="./index.html" class="active"> home </a></li>
+            </ul>
+            <div class="regLogin">
+                <a href="./login.html"> login </a>
+            </div> -->
+        </div>
+    </nav>
     <div class="container">
         <div class="header">
-            <h2>sign up</h2>
+            <h2>Sign Up</h2>
         </div>
         <form id="form" class="form">
             <div class="form-control">
-                <label for="username">Full name</label>
-                <input type="text" placeholder="Ahmad" id="username" />
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
+                <!-- <label for="username">Full name</label> -->
+                <input type="text" placeholder="Full name" id="username" />
                 <small>Error message</small>
             </div>
             <div class="form-control">
-                <label for="username">Address</label>
-                <input type="text" placeholder="Jordan" autocomplete="off" id="Address" />
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
+                <!-- <label for="username">Address</label> -->
+                <input type="text" placeholder="Address" autocomplete="off" id="Address" />
                 <small>Error message</small>
             </div>
             
             <div class="form-control">
-                <label for="username">Mobile</label>
-                <input type="number" placeholder="07********" id="mobile"/>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
+                <!-- <label for="username">Mobile</label> -->
+                <input type="number" placeholder="Mobile" id="mobile"/>
                 <small>Error message</small>
             </div>
             <div class="form-control">
-                <label for="username">Email</label>
-                <input type="email" placeholder="a@florin-pop.com" id="email" />
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
+                <!-- <label for="username">Email</label> -->
+                <input type="email" placeholder="Email" id="email" />
                 <small>Error message</small>
             </div>
             <div class="form-control">
-                <label for="username">Password</label>
+                <!-- <label for="username">Password</label> -->
                 <input type="password" placeholder="Password" id="password"/>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
+                <img src="./images/visibility_off.svg" alt="" id="show-hide">
                 <small>Error message</small>
             </div>
             <div class="form-control">
-                <label for="username">Password check</label>
-                <input type="password" placeholder="Password two" id="password2"/>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
+                <!-- <label for="username">Confirm Password</label> -->
+                <input type="password" placeholder="Confirm Password" id="password2"/>
                 <small>Error message</small>
             </div>
-            <button>save</button>
+            <button type="submit" >Register</button>
         </form>
     </div>
-    
+<!-- =======================================Footer ================================ -->
+<footer class="footer">
+    <div class="footer-content"> All rights reserved. 2019</div>
+</footer>
+<!-- ==================== Script ===================== -->
+<script src="./js/register.js" type="module"></script>
 </body>
-<script src="./js/register.js"></script>
 </html>

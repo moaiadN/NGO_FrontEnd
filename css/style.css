@@ -79,19 +79,25 @@ nav {
     font-weight: bold;
     /* border: 1px solid #5fa8d3; */
     padding: 10px;
+    transition: 1s ease-in-out;
 }
 .regLogin a:hover,
-.logout a:hover {
-    color: #5fa8d3;
-    transform: translate3D(0, 0, 0);
+.logout a:hover{
+    color: #ffa600;
+}
+.logout:hover {
+    transition: 1s ease-in-out;
+    border: 1px solid #ffa600;
 }
 .logout {
     position: absolute;
     top: 17px;
     right: 15px;
     text-transform: uppercase;
-    padding: 14px 10px;
-    visibility: hidden;
+    padding: 10px 10px;
+    border: 2px solid #0011fc;
+    border-radius: 5px;
+    /* display: none; */
 }
 /* =========Search box====== */
 .searchBox {
@@ -622,13 +628,13 @@ input[type="number"] {
     }
     .profile_pic {
         position: relative;
-        top: -180px;
-        left: 225px;
+        top: -140px;
+        left: 0;
     }
     .about {
         position: absolute;
-        top: 500px;
-        left: 25px;
+        top: 265px;
+        left: 150px;
     }
     .signup,
     .login {

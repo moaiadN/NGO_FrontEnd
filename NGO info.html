@@ -11,19 +11,19 @@
 
 <body>
     <nav>
-        <span class="menu-show" onclick="toggleMenu()">&#9776</span>
+        <span class="menu-show" id="showMenu">&#9776</span>
         <div class="menu-list" id="menu-list">
             <ul>
                 <li><a href="./index.html" class="active"> home </a></li>
                 <li><a href="./trainee-profile.html"> profile </a></li>
-                <li><a href="./signup.html"> Sign up </a></li>
-                <li><a href="./login.html"> login </a></li>
-                <li><a href="./register.html"> logout </a></li>
+                <li><a href="./signup/index.html"> Sign up </a></li>
+                <li><a href="./login/index.html"> login </a></li>
+                <li><a href="./login/index.html"> logout </a></li>
             </ul>
         </div>
         <!-- ================== -->
-        <div class="list">
-            <ul>
+        <div class="list" id="list">
+            <!-- <ul>
                 <li><a href="./index.html" class="active"> home </a></li>
                 <li><a href="./trainee-profile.html"> profile </a></li>
             </ul>
@@ -31,7 +31,7 @@
                 <a href="./signup.html"> Sign up </a> |
                 <a href="./login.html"> login </a>
             </div>
-            <div class="logout"><a href="./register.html"> logout </a></div>
+            <div class="logout"><a href="./login/index.html"> logout </a></div> -->
         </div>
         <!-- ============================= -->
         <div class="searchBox">
@@ -41,33 +41,11 @@
             </button>
         </div>
     </nav>
-    <header>
-        <span class="title">CHAMS.NGO</span>
-    </header>
-    <figure>
-        <div class="profile_pic">
-            <div class="picture"><img src="./images/chams.jpg" alt="Organization" title="Organization" width="240px"
-                    height="240px"></div>
-            <div class="ngo_url"><a href="https://www.chamsngo.org" target="_blank">www.chamsngo.org</a></div>
-        </div>
-        <div class="about">
-            <span class="bio">Accueil</span>
-            <p>In 2018, more than 70 million people have been forced to flee their homes and become refugees due to
-                geopolitical crises. In addition, the UN forecasts that 280 million people will become refugees by 2050
-                due to our climate crisis.
-                People living in refugee camps stay there for 17 years on average, but only 1% to 3% have access to
-                higher education.
-                We created CHAMS, a startup NGO, to bring tech education and employment to refugee host zones.
-                You can help us to build a better world!</p>
-        </div>
-    </figure>
-    <!-- =================================== footer =============================================== -->
-
-    <footer>
-        <div> All rights reserved. 2019</div>
-    </footer>
+    
+    <div id="conteriner"></div>
     <!-- =================================== script =============================================== -->
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/ngoPorfilrRender.js"></script>
 </body>
 
 </html>

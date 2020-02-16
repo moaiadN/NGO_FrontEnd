@@ -11,7 +11,7 @@
 
 <body>
     <nav>
-        <span class="menu-show" onclick="toggleMenu()">&#9776</span>
+        <span class="menu-show" id="showMenu">&#9776</span>
         <div class="menu-list" id="menu-list">
             <ul>
                 <li><a href="./index.html" class="active"> home </a></li>
@@ -22,8 +22,8 @@
             </ul>
         </div>
         <!-- ================== -->
-        <div class="list">
-            <ul>
+        <div class="list" id="list">
+            <!-- <ul>
                 <li><a href="./index.html" class="active"> home </a></li>
                 <li><a href="./trainee-profile.html"> profile </a></li>
             </ul>
@@ -31,14 +31,7 @@
                 <a href="./signup.html"> Sign up </a> |
                 <a href="./login.html"> login </a>
             </div>
-            <div class="logout"><a href="./register.html"> logout </a></div>
-        </div>
-        <!-- ============================= -->
-        <div class="searchBox">
-            <input class="searchInput" type="text" name="" placeholder="Search">
-            <button class="searchButton" href="#">
-                <img src="./images/search-24px.svg">
-            </button>
+            <div class="logout"><a href="./register.html"> logout </a></div> -->
         </div>
     </nav>
     <header id="headTitle">
@@ -54,9 +47,9 @@
                 <li>Almafraq - Zaatari Camp</li>
                 <li>Remaining Seats</li>
             </ul> -->
-        </div> 
+        </div>
         <div class="about" id="aboutCourse">
-           <!-- <h2 class="bio">Category</h2>
+            <!-- <h2 class="bio">Category</h2>
             <h4 class="bio">Web Developer</h4>
             <hr>
             <p>
@@ -81,10 +74,11 @@
     </figure>
     <!-- =================================== footer =============================================== -->
 
-    <footer>
-        <div> All rights reserved. 2019</div>
+    <footer class="footer">
+        <div class="footer-content"> All rights reserved. 2019</div>
     </footer>
     <!-- =================================== script =============================================== -->
+    <script src="./js/main.js" type="module"></script>
     <script src="./js/courseAbout.js" type="module"></script>
 </body>
 

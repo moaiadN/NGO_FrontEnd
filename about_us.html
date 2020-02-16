@@ -11,19 +11,19 @@
 
 <body>
     <nav>
-        <span class="menu-show" onclick="toggleMenu()">&#9776</span>
+        <span class="menu-show" id="showMenu">&#9776</span>
         <div class="menu-list" id="menu-list">
             <ul>
                 <li><a href="./index.html" class="active"> home </a></li>
                 <li><a href="./trainee-profile.html"> profile </a></li>
-                <li><a href="./signup.html"> Sign up </a></li>
-                <li><a href="./login.html"> login </a></li>
-                <li><a href="./register.html"> logout </a></li>
+                <li><a href="./signup/index.html"> Sign up </a></li>
+                <li><a href="./login/index.html"> login </a></li>
+                <li><a href="./login/index.html"> logout </a></li>
             </ul>
         </div>
         <!-- ================== -->
-        <div class="list">
-            <ul>
+        <div class="list" id="list">
+            <!-- <ul>
                 <li><a href="./index.html" class="active"> home </a></li>
                 <li><a href="./trainee-profile.html"> profile </a></li>
             </ul>
@@ -31,7 +31,7 @@
                 <a href="./signup.html"> Sign up </a> |
                 <a href="./login.html"> login </a>
             </div>
-            <div class="logout"><a href="./register.html"> logout </a></div>
+            <div class="logout"><a href="./login/index.html"> logout </a></div> -->
         </div>
         <!-- ============================= -->
         <div class="searchBox">
@@ -50,11 +50,11 @@
     </figure>
     <!-- =================================== footer =============================================== -->
 
-    <footer>
-        <div> All rights reserved. 2019</div>
+    <footer class="footer">
+        <div class="footer-content"> All rights reserved. 2019</div>
     </footer>
     <!-- =================================== script =============================================== -->
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" type="module"></script>
 </body>
 
 </html>

@@ -9,53 +9,73 @@
 </head>
 <body>
     <nav>
-        <div class="container1">
-            <span class="menu-show" id="showMenu">&#9776</span>
-            <div class="menu-list" id="menu-list">
-                <ul>
-                    <li><a href="../index.html" class="active"> home </a></li>
-                    <li><a href="../trainee-profile.html"> profile </a></li>
-                    <li><a href="../signup.html"> Sign up </a></li>
-                    <li><a href="../login.html"> login </a></li>
-                    <li><a href="../register.html"> logout </a></li>
-                </ul>
-            </div>
-            <!-- ================== -->
-            <div class="list">
-                <ul>
-                    <li><a href="../index.html" class="active"> home </a></li>
-                    <li><a href="../trainee-profile.html"> profile </a></li>
-                </ul>
-                <div class="regLogin">
-                    <a href="../signup.html"> Sign up </a> |
-                    <a href="../login.html"> login </a>
-                </div>
-                <div class="logout"><a href="../register.html"> logout </a></div>
-            </div>
+        <span class="menu-show" id="showMenu">&#9776</span>
+        <div class="menu-list" id="menu-list">
+            <ul>
+                <li><a href="./index.html" class="active"> home </a></li>
+                <li><div class="logout"><a href="./login/index.html"> logout </a></div></li>
+            </ul>
+        </div>
+        <!-- ================== -->
+        <div class="list" id="list">
+            <!-- <ul>
+                <li><a href="./index.html" class="active"> home </a></li>
+            </ul>
+            <div class="logout"><a href="./login/index.html"> logout </a></div> -->
+        </div>
     </nav>
+    <!-- ==================================== -->
     <div class="container">
         <div class="header">
             <h2>Change password</h2>
         </div>
         <form id="form" class="form">
-                       <div class="form-control">
-                <label for="username">Password</label>
-                <input type="password" placeholder="Password" id="password"/>
+            <div class="form-control">
+                <!-- <label for="username">Old Password</label> -->
+                <input type="password" placeholder="Old Password" id="oldPassword" />
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>
             </div>
             <div class="form-control">
-                <label for="username">Password check</label>
-                <input type="password" placeholder="Password two" id="password2"/>
+                <!-- <label for="username">Password</label> -->
+                <input type="password" placeholder="Password" id="password" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <img src="./images/visibility_off.svg" alt="" id="show-hide" >
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <!-- <label for="username">Confirm Password</label> -->
+                <input type="password" placeholder="Confirm Password" id="password2" />
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>
             </div>
-            <button>save</button>
+            <button type="submit" id="submit">save</button>
+
         </form>
     </div>
-    
+<!-- ============================== Footer ==================== -->
+    <footer class="footer">
+        <div class="footer-content"> All rights reserved. 2019</div>
+    </footer>
 </body>
-<script src="./js/passChange.js"></script>
+<script>
+    // if(!localStorage.getItem('password')){
+    //   localStorage.setItem('password', 'pass');
+    // }
+    // function changePassBtnClick(){
+    //   localStorage.setItem('password', document.getElementById('changePass').value);
+    //   alert('Password changed');
+    // }
+    // function loginBtnClick(){
+    //   if(document.getElementById('login').value == localStorage.getItem('password')){
+    //     alert('Correct Login');
+    //   }else{
+    //     alert('Wrong Password');
+    //   }
+    // }
+</script>
+<script src="./js/passChange.js" type="module"></script>
 </html>

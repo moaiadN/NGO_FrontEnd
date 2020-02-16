@@ -13,8 +13,8 @@
 <body>
     <nav>
         <div class="container">
-        
-            <span class="menu-show" onclick="toggleMenu()">&#9776</span>
+
+            <span class="menu-show" id="showMenu">&#9776</span>
             <div class="menu-list" id="menu-list">
                 <ul>
                     <li><a href="./index.html" class="active"> home </a></li>
@@ -25,8 +25,8 @@
                 </ul>
             </div>
             <!-- ================== -->
-            <div class="list">
-                <ul>
+            <div class="list" id="list">
+                <!-- <ul>
                     <li><a href="./index.html" class="active"> home </a></li>
                     <li><a href="./trainee-profile.html"> profile </a></li>
                 </ul>
@@ -34,14 +34,7 @@
                     <a href="./signup.html"> Sign up </a> |
                     <a href="./login.html"> login </a>
                 </div>
-                <div class="logout"><a href="./register.html"> logout </a></div>
-            </div>
-            <!-- ============================= -->
-            <div class="searchBox">
-                <input class="searchInput" type="text" name="" placeholder="Search">
-                <button class="searchButton" href="#">
-                    <img src="./images/search-24px.svg">
-                </button>
+                <div class="logout"><a href="./index.html"> logout </a></div> -->
             </div>
         </div>
     </nav>
@@ -54,7 +47,7 @@
         <div class="image" id="profilePhoto"> </div>
         <div class="content">
             <br>
-            <img src="iconfinder_edit.png" class="editicon" onclick="change_value()" >
+            <img src="./images/iconfinder_edit.png" class="editicon" id="editIcon">
             <form class="kWXsT" method="POST" id="profileContent">
                 <!-- <div class="eE-OA">
                    <label for="pepName">Full name </label>
@@ -78,11 +71,15 @@
                     </div> -->
             </form>
 
-           <a href="./chang password/Login.html"><button class="button button2" type="button">Change password</button></a>
-           <button class="button button2" type="button" onclick="save()" id="save_btn">Save</button>
-           <button class="button button2" type="button" onclick="cancle()" id="cancle_btn">cancle</button>
+            <button class="button button2"><a href="./passChange.html">Change password</a></button>
+            <button class="button button2" id="save_btn">Save</button>
+            <button class="button button2" id="cancel_btn">Cancel</button>
         </div>
     </figure>
+    <!-- =======================================Footer ================================ -->
+    <footer class="footer">
+        <div class="footer-content"> All rights reserved. 2019</div>
+    </footer>
 </body>
 <script src="./js/trainee.js" type="module"></script>
 

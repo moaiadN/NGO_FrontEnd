@@ -1,50 +1,12 @@
-import { getAllCourses } from './api/course.js';
-// import { search  } from './api/search';
+//  ================= Nav ===============
+import { renderHeader } from "./api/header.js";
+let token = null;
+token = localStorage.getItem('token');
+renderHeader('list', token !== null);
 
-let page = 1;
-let courses = [];
-let pageSize = 6;
-
-getAllCourses(page, pageSize, result => {
-    courses = result;
-    renderCourses(courses);
-});
-
- document.getElementById('show').addEventListener('click' , function(event){
-     event.preventDefault();
-     
-    page++;
-    console.log(page);
-    getAllCourses(page, pageSize, result => {
-        courses = courses.concat(result);
-        console.log(courses);
-        renderCourses(courses);
-    });
-          });
-//  ====================== Get All Courses -Home- ==========================
-
-function renderCourses(courses) {
-    let html = '';
-    for (let i in courses) {
-        html += `
-                    <div class="course-info">
-                    <div class="image">
-                        <img src="${courses[i].photo}" alt="">
-                    </div>
-                    <hr>
-                    <div class="content">
-                        <h3>${courses[i].courseTitle}</h3>
-                        <label>Trainer :<a href="./trainer.html"> ${courses[i].trainerName} </a></label>
-                        <p><b>Hypertext Markup Language (HTML)</b> is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. </p>
-                        <span><a href="./about_course.html">Read More</a></span>
-                    </div>
-                    </div>
-                `;
-    }
-    document.getElementById('courseContent').innerHTML = html;
-}
 //  ==================== Search Box ====================
-document.getElementById('searchButton').addEventListener('click', function searchBox() {
+// document.getElementById('searchButton').addEventListener('click', searchBox());
+function searchBox() {
     var input, courses, courseInfo, filter, h3, label, i, txtValue, txtValue1;
     input = document.getElementById("searchInput");
     filter = input.value.toUpperCase();
@@ -62,7 +24,7 @@ document.getElementById('searchButton').addEventListener('click', function searc
         }
     }
     input.value = "";
-});
+}
 //  ==================== Show / Hide aside Menu ====================
 let showMenu = true;
 document.getElementById('showMenu').addEventListener('click', function toggleMenu() {
@@ -75,16 +37,3 @@ document.getElementById('showMenu').addEventListener('click', function toggleMen
     showMenu = !showMenu;
 });
 //  ==================== Show / Hide Password ====================
-document.getElementById("passField").addEventListener("input", () => {
-    document.getElementById('show-hide').style.display = "block";
-});
-function togglePass() {
-    var showPass = document.getElementById("passField");
-    if (showPass.type === "password") {
-        showPass.type = "text";
-        document.getElementById('show-hide').src = './images/visibility.svg';
-    } else {
-        showPass.type = "password";
-        document.getElementById('show-hide').src = './images/visibility_off.svg';
-    }
-}

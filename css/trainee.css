@@ -7,18 +7,23 @@ body {
     padding: 0;
     background: #f5f5f5;
 }
+a {text-decoration: none;}
 /*=========================== NAV bar =========================== */
-.container {
-    width: 95%;
-    height: auto;
-    margin: auto;
+#show-hide{
+	display: none;
+    position: absolute;
+    top: 10px;
+	right: 10px;
+	cursor: pointer;
 }
+
 nav {
     width: 100%;
     height: 80px;
     background: linear-gradient(#fff, #dfe4ea);
     position: fixed;
-    z-index: 1;
+	z-index: 1;
+	top: 0;
 }
 .list {
     float: left;
@@ -42,7 +47,7 @@ nav {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 3px;
-    line-height: 60px;
+    /* line-height: 60px; */
     padding: 0 10px;
 }
 .list ul li a::after {
@@ -73,41 +78,200 @@ nav {
     font-weight: bold;
     /* border: 1px solid #5fa8d3; */
     padding: 10px;
+    transition: 1s ease-in-out;
 }
 .regLogin a:hover,
-.logout a:hover {
-    color: #5fa8d3;
-    transform: translate3D(0, 0, 0);
+.logout a:hover{
+    color: #ffa600;
+}
+.logout:hover {
+    transition: 1s ease-in-out;
+    border: 1px solid #ffa600;
 }
 .logout {
     position: absolute;
     top: 17px;
     right: 15px;
     text-transform: uppercase;
-    padding: 14px 10px;
-    visibility: hidden;
+    padding: 10px 10px;
+    border: 2px solid #0011fc;
+    border-radius: 5px;
+    /* display: none; */
 }
 /* ==================== */
 .menu-show {
     display: none;
 }
+/* ========================= Footer ========================== */
+.footer {
+    width: 100%;
+    height: 60px;
+    background: #252525;
+    color: #fff;
+    text-align: center;
+    float: left;
+}
+.footer-content {
+        margin-top: 25px;
+    }
+/* =========================== Responsive =========================== */
+@media only screen and (max-width: 600px) {
+    .list {
+        display: none;
+    }
+    /* =========================== Toggle menu =========================== */
+    .menu-show {
+        color: #797979;
+        font-size: 35px;
+        width: 35px;
+        height: 40px;
+        margin: 15px 20px;
+        display: block;
+        cursor: pointer;
+    }
+    .menu-list {
+        background: rgba(0, 0, 0, .7);
+        width: 229px;
+        height: 110vh;
+        margin-top: -72px;
+        margin-left: -8px;
+        display: none;
+    }
+    .menu-list ul {
+        list-style: none;
+        padding-top: 100px;
+    }
+    .menu-list ul li {
+        list-style: none;
+        text-decoration: none;
+        padding-bottom: 20px;
+    }
+    .menu-list ul li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 60px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        /* transition: all .5s cubic-bezier(0.4, 0, 1, 1); */
+    }
+    .menu-list ul li a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        margin-left: 10px;
+        /* transition: width .3s; */
+        transition: all .5s cubic-bezier(0.4, 0, 1, 1);
+    }
+    .menu-list ul li a:hover::after {
+        width: 90%;
+    }
+}
+/* =========================== max 600px =========================== */
+@media only screen and (min-width: 600px) {
+    .list {
+        display: none;
+    }
+    /* ====================== Toggle menu ========================= */
+    .menu-show {
+        color: #797979;
+        font-size: 35px;
+        width: 35px;
+        height: 40px;
+        margin: 15px 20px;
+        display: block;
+        cursor: pointer;
+    }
+    .menu-list {
+        background: rgba(0, 0, 0, .7);
+        width: 229px;
+        height: 110vh;
+        margin-top: -72px;
+        margin-left: -8px;
+        display: none;
+    }
+    .menu-list ul {
+        list-style: none;
+        padding-top: 100px;
+    }
+    .menu-list ul li {
+        list-style: none;
+        text-decoration: none;
+        padding-bottom: 5px;
+        width: 105px;
+    }
+    .menu-list ul li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        /* line-height: 60px; */
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .menu-list ul li a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        transition: all .5s cubic-bezier(0.4, 0, 1, 1);
+    }
+    .menu-list ul li a:hover::after {
+        width: 100%;
+    }
+}
+/* =========================== 768px =========================== */
+@media only screen and (min-width: 768px) {
+	.list {
+        display: block;
+    }
+    .menu-show {
+        display: none;
+    }
+}
+ /* =========================== 992px =========================== */
+@media only screen and (min-width: 992px) {
+  
+} 
+/* ============================================================= */
 .input {
-    margin: 10px;
+    margin: 10px 0;
     border: none;
     outline: none;
-    width: 320px;
-    height: 30px;
+    width: 80%;
+    height: 40px;
+    font-size: 17px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 10px
+}
+label{
+    font-weight: bold;
+    /* font-size: 17px; */
 }
 .editicon {
     position: relative;
-    left: 300px;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 114px;
+    opacity: 0.4;
+}
+.editicon:hover{
+    opacity: 1;
 }
 .content {
-    margin-left: 370px;
-    font-weight: normal;
-    width: 300px;
+    position: relative;
+    margin-left: 315px;
+    width: 500px;
     text-align: justif;
 }
 .buttonsup {
@@ -136,11 +300,13 @@ figure {
     box-shadow: 0 5px 10px #ccc;
     float: left;
 }
+form{
+    margin-bottom: 8px;
+}
 .button {
-    background-color: rgb(84, 134, 243);
-    /* Green */
+    background-color: #3140c4;
     border: none;
-    margin: 2px;
+    margin: 5px 0;
     color: white;
     padding: 10px 10px;
     text-align: center;
@@ -148,9 +314,12 @@ figure {
     display: inline-block;
     font-size: 15px;
     cursor: pointer;
-    -webkit-transition-duration: 0.4s;
-    /* Safari */
     transition-duration: 0.4s;
+    width: 80%;
+    border-radius: 5px;
+}
+.button a{
+    color: #fff;
 }
 .button2:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);

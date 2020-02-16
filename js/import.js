@@ -39,6 +39,7 @@ function renderCourses(courses) {
                     </div>
                 `;
     }
+    console.log(html);
     document.getElementById('courseContent').innerHTML = html;
     let more=document.getElementsByClassName("readmore");
     console.log(more);

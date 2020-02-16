@@ -1,0 +1,229 @@
+*{
+	outline: none;
+}
+body{
+    background-color: #F0F2F2 ;
+outline: none;
+  }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+     background-color:black; 
+    color: black;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    height:31px;
+    font-family: sans-serif;
+    font-weight:bold;
+
+  }
+  li a:hover:not(.active) {
+   background-color: gray;
+   
+    height: 31px;
+	opacity:0.8;
+	color: white;
+  }
+  a{
+   /* text-decoration:underline;*/
+    color:black;
+  }
+  .right{
+  	float: right;
+  }
+  h1{
+  	text-align: center;
+  }
+  h3{
+  	margin-top: 10px;
+  	margin-left: 10px;
+  	padding: 10px;
+
+  }
+  .container{
+				margin-left:30px;
+			} 
+  .list{
+width:30%;
+height: 247px;
+background-color: red;
+transition: 0.6s;
+background-color: white;
+transform: 0.7s;
+float: left;
+margin: 10px;
+
+  }
+.list:hover{
+	      transform: scale(1.1);
+}
+.remove{
+  width:20px;
+  height: 20px;
+  float: right;
+  margin-top: -13px;
+  padding: 10px;
+    cursor: pointer;
+/* display: none;*/
+}
+.list:hover a .remove{
+  display: inline-block;
+}
+.MoreInfo{
+	width: 70%;
+	height: 30px;
+	color: white;
+	background-color:#282657;
+  margin-left: 35px;
+	   margin-top: 10px;
+	   border-style: none;
+	     cursor: pointer;
+}
+.MoreInfo:hover{
+	opacity: 0.7;
+}
+p{
+	margin-left: 10px;
+}
+.AllCourses{
+	margin-left: 20px;
+    margin-right: 20px
+}
+.ShowMore{
+	margin-top: 30px;
+	cursor: pointer;
+	width: 60%;
+	height: 50px;
+	margin-left: 200px;
+	text-align: center;
+	align-content: center;
+	background-color: #282657;
+	color: white;
+}
+.addAcountIcon{
+ margin-left:1000px;
+border-style: none;
+  width: 50px;
+  height: 50px;
+}
+.form{
+	width:30%;
+height:200px;
+background-color: #ffffff;
+transition: 0.6s;
+background-color: white;
+transform: 0.7s;
+float: left;
+margin: 10px; 
+cursor: pointer;
+ /*margin: 15 0 0 15;*/
+}
+.form:hover{
+    transform: scale(1.05);
+
+}
+
+img{
+    width: 100%;
+    margin: 10 0 0 10;
+ /*   border: #ffffff 3px solid;*/
+   /* border-radius: 50%;*/
+}
+.im{
+    width: 30%;
+    float: left;
+}
+.contnt{
+    width: 60%;
+    height: 100%;
+    background-color: #ffffff;
+    font-family: inherit;
+    border-radius: 10%;
+}
+ .EditIcon{
+     width: 20px;
+     height: 20px;
+     background-color: #f0f2f2 ;
+     cursor: pointer;
+ }
+
+ .savebtn{
+     background-color:#0793C8;
+     height: 38px;
+     width:155px;
+     border-radius: 10px;
+     outline: none;
+     font-size: 16px;
+ }
+ .Canclebtn{
+     font-size: 16px;
+     height: 38px;
+     width:155px;
+     border-radius: 10px;
+     outline: none;
+     float: right;
+    margin-top: -37px;
+    margin-right: 100px; 
+ }
+ .link{
+     margin-top: 20px;
+ }
+ .btn{
+    margin-top: 90px;
+}
+ .textBio{
+     width:400px;
+     height: 200px;
+     border-style: none;
+ }
+ #BioId{
+    width:400px ;
+    height: 300px;
+    border-style: none;
+ }
+ .profileImg{
+     width: 200px;
+     cursor: pointer;
+ }
+ .infoProfile{
+     background-color: #ffffff;
+ }
+ .Bio{
+     width: 40%; 
+     float: left;
+     margin-left: 4%;
+     height: 300px; 
+ }
+ .profile{
+    float: left;
+     position: relative;
+     background-color: white;
+     transition: 0.6s;
+ }
+input{
+  margin-left: 10px;
+  border-bottom-style: solid;
+}
+.AddIcon{
+  width: 50px;
+  height: 50px;
+  float: right;  
+    margin-right: 50px;
+}
+
+
+
+
+
+
+

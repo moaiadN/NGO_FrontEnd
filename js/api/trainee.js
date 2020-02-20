@@ -29,16 +29,21 @@ function login(email, password, callback) {
 }
 
 function getInfo(token, callback) {
-    if (callback) {
-        callback({
-            id: 1,
-            name: 'samee7',
-            email: 'a@b.c',
-            address: 'akjsdhaskjdasdh',
-            phone: '1273606787',
-            photo: './images/person.png'
-        });
-    }
+    let id=localStorage.getItem("id")
+
+        fetch("http://localhost:3000/trainee/"+id,{
+      method:"GET"
+    }).then(re=>re.json()).then(data=>{
+        console.log(data.data[0])
+        if (callback) {
+            callback(data.data[0]);
+        }
+    
+    })
+    
+
+
+
 }
 
 export {

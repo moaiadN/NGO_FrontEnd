@@ -99,9 +99,9 @@ document.getElementById("show-hide").addEventListener("click",function togglePas
 });
 
 
-let register=document.getElementById("register").addEventListener("click",e=>{
-
-
+document.getElementById("register").addEventListener("click",register)
+function register(){
+// alert('hi');
 	const username = document.getElementById('username').value;
 	const Address = document.getElementById('Address').value;
 	const mobile = document.getElementById('mobile').value;
@@ -115,9 +115,17 @@ let register=document.getElementById("register").addEventListener("click",e=>{
 		},
 		body:JSON.stringify({email:email,password:password,name:username,address:Address,phone:mobile})
 	}).then(re=>re.json()).then(data=>{
-			console.log(data.status)
+		console.log(data)
+		localStorage.setItem("token",data.token)
+		localStorage.setItem("id" , data.id)
+			if(data.status == 226) {
+				document.getElementById('email').innerHTML = "your Email is Exists";
+				document.getElementById('email').style.border="2px solid red";
+			}else{
+				document.getElementById('email').innerHTML = "";
+				window.location.href="../trainee-profile.html";}
 	})
 
 
 
-})
+}

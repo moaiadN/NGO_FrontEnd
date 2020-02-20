@@ -53,6 +53,13 @@ function renderCourses(courses) {
      })
  } 
  }
+ document.getElementById('logout').addEventListener('click',logout);
+  function logout(){
+    alert('hi');
+    localStorage.removeItem('token');
+  localStorage.removeItem("id");
+  window.location = '../index.html'
+  }
  
  ////////////////////////////////////////////////////
 //  function readmorecourses(trg){

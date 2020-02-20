@@ -19,7 +19,7 @@ function renderCorseProfile(courseInfo) {
                     <li>${courseInfo[0].start_date}</li>
                     <li>${courseInfo[0].location}</li>
                     <li>${courseInfo[0].number_of_seats}</li>
-                    <div><a  id="enrollCourse" onclick="enroll()" href="#">Enroll in Course</a></div>
+                    <div><a  id="enrollCourse" href="#">Enroll in Course</a></div>
                 </ul>
     `;
     const aboutCourseHtml = `
@@ -31,6 +31,7 @@ function renderCorseProfile(courseInfo) {
 
     document.getElementById('pagePhoto').innerHTML = pagePhotoHtml;
     document.getElementById('aboutCourse').innerHTML = aboutCourseHtml;
+    document.getElementById("enrollCourse").addEventListener("click", enroll);
 }
 const url = window.location.href;
 console.log(getParameterByName("id", url));
@@ -48,15 +49,16 @@ function getParameterByName(name, url) {
 
 function enroll() {
     let idcourses = getParameterByName("id", url);
-    console.log(id);
-    if (localStorage.getItem("token") !== undefined) {
-        fetch("http://localhost:3000/trainee/check", {
+    console.log("id");
+    console.log(localStorage.getItem("token") == null);
+    if (localStorage.getItem("token") !== null) {
+        fetch("http://localhost:3000/trainee/addcourse", {
                 method: "POST",
                 headers: {
                     "Content-Type": "Application/json"
                 },
                 body: JSON.stringify({
-                    token: localStorage.getItem("token"),
+                    idtrainee: localStorage.getItem("id"),
                     idcourses: idcourses
                 })
             })
@@ -65,8 +67,8 @@ function enroll() {
                 console.log(data);
             })
     } else {
-        alertalert("Login OR Resgtaer");
-        window.location.href = "../Course/NewCourse.html";
+        // alert("Login OR Resgtaer");
+        window.location.href = "../login.html";
     }
 }
 // if(data.status!==200){

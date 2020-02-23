@@ -97,7 +97,7 @@ nav {
     padding: 10px 10px;
     border: 2px solid #0011fc;
     border-radius: 5px;
-    /* display: none; */
+    display: none;
 }
 /* =========Search box====== */
 .searchBox {

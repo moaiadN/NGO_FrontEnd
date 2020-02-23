@@ -70,3 +70,31 @@ document.getElementById("show-hide").addEventListener("click",function togglePas
         document.getElementById('show-hide').src = './images/visibility_off.svg';
     }
 });
+// ============================================
+
+
+document.getElementById("save").addEventListener("click",e=>{
+let p1=document.getElementById("oldPassword").value
+let p2=document.getElementById("password2").value
+
+fetch("http://localhost:3000/trainee/EditePasswordTrainee/",{
+	method:"PUT",
+	headers:{
+		"Content-Type":"Application/json",
+		"authorization":"b "+localStorage.getItem("token")
+	},
+	body:JSON.stringify({old_password:p1,new_password:p2})
+}).then(re=>re.json()).then(data=>{
+	if(data.status===404){
+let p1=document.getElementById("oldPassword").style.border="2px solid red"
+let p2=document.getElementById("password2").style.border="2px solid red"
+let p22=document.getElementById("password").style.border="2px solid red"
+
+	}else{
+		window.location.href="./trainee-profile.html"
+	}
+})
+
+})
+
+

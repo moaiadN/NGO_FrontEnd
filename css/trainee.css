@@ -294,12 +294,22 @@ figure {
 }
 .image {
     width: 242px;
+    height: 242px;
     background: #fff;
     position: relative;
     top: -140px;
     box-shadow: 0 5px 10px #ccc;
     float: left;
 }
+.image img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.image .fileupload {
+    display: none;
+}
+
 form{
     margin-bottom: 8px;
 }

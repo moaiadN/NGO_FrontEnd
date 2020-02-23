@@ -10,16 +10,18 @@ function renderHeader(containerId, isUserLoggedIn) {
                 </div>`}
             ${isUserLoggedIn ? ` 
             <li><a href="./trainee-profile.html"> profile </a></li>
+            <li><a href="./Front_End_Courses.html">My Courses List </a></li>
             </ul>
             <div class="logout" id="logout"><a href="./index.html"> logout </a></div>` : ''}
     `;
-
+    
     document.getElementById(containerId).innerHTML = html;
     
     if (isUserLoggedIn) {
         document.getElementById('logout').addEventListener('click', function logout(){
             console.log(localStorage.getItem('token'));
             localStorage.removeItem('token');
+            localStorage.removeItem('id');
             console.log(localStorage.getItem('token'));
             window.location.origin;
         });

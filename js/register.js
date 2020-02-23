@@ -123,7 +123,7 @@ function register(){
 				document.getElementById('email').style.border="2px solid red";
 			}else{
 				document.getElementById('email').innerHTML = "";
-				window.location.href="../trainee-profile.html";}
+				window.location.href="../trainee-profile.html?="+data.id;}
 	})
 
 

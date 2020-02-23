@@ -43,7 +43,7 @@ function checkInputs() {
 // ============================================
 function loginn() {
 	var email = document.getElementById('email').value;
-	var password = document.getElementById('password').value;
+	var password = document.getElementById("password").value;
 	fetch("http://localhost:3000/trainee/loginTrainee",{
 		method:"POST",
 		headers:{
@@ -51,22 +51,14 @@ function loginn() {
 		},
 		body:JSON.stringify({email:email,password:password})
 	}).then(re=>re.json()).then(data=>{
-		 console.log(data.status)
-    //   localStorage.setItem("token" , data.token)
-	//   localStorage.setItem("id" , data.id)
-	if(data.status == 200) {
-		localStorage.setItem("token",data.token)
-	localStorage.setItem("id",data.id)
-	window.location.href="../index.html"
-     }else if(data.status == 400){
-		document.getElementById("password").innerHTML = "your password dosen't exists";
-			var password = document.getElementById("password").style.border="2px solid red";
-			document.getElementById("password").value = "";
-		}else if(data.status == 404){
+		if(data.status==400){
 			var email = document.getElementById('email').style.border="2px solid red";
-			document.getElementById('email').innerHTML = "your email dosen't exists";
-			document.getElementById('email').value = "";
-			
+			var password = document.getElementById("password").style.border="2px solid red";
+		}else{
+			console.log(data);
+			localStorage.setItem("token",data.token);
+			localStorage.setItem("id",data.id);
+			window.location = "../trainee-profile.html?id="+data.id;
 		}
 
 	})

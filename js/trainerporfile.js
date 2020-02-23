@@ -39,7 +39,7 @@ document.getElementById("conteriner").innerHTML += htmlArray.join('');
 ///////////////////////////////////////////////
 function NgoPorfile() {
     let id=getParameterByName("id", url);
-    console.log(id);
+    console.log("sfSVZXgb:",id);
     fetch('http://localhost:3000/trainer/'+id,
     {
         method:'GET'
@@ -52,3 +52,11 @@ function NgoPorfile() {
               renderngoporfile(data);
       });
     }
+
+//     document.getElementById('logout').addEventListener('click',logout);
+//   function logout(){
+//     // alert('hi');
+//     localStorage.removeItem('token');
+//   localStorage.removeItem("id");
+//   window.location = '../index.html'
+//   }

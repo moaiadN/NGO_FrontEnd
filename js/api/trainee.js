@@ -28,26 +28,26 @@ function login(email, password, callback) {
     }
 }
 
-function getInfo(token, callback) {
-    let id=localStorage.getItem("id")
+// function getInfo(token, callback) {
+//     let id=localStorage.getItem("id")
 
-        fetch("http://localhost:3000/trainee/"+id,{
-      method:"GET"
-    }).then(re=>re.json()).then(data=>{
-        console.log(data.data[0])
-        if (callback) {
-            callback(data.data[0]);
-        }
+//         fetch("http://localhost:3000/trainee/"+id,{
+//       method:"GET"
+//     }).then(re=>re.json()).then(data=>{
+//         console.log(data.data)
+//         if (callback) {
+//             callback(data.data);
+//         }
     
-    })
+//     })
     
 
 
 
-}
+// }
 
 export {
     register,
     login,
-    getInfo
+    // getInfo
 };

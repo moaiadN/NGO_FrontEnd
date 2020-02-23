@@ -37,7 +37,6 @@ function NgoPorfile() {
     fetch('http://localhost:3000/ngo/'+id,
     {
         method:'GET'
-  
     }) 
     .then(Response =>
           Response.json())

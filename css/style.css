@@ -97,7 +97,7 @@ nav {
     padding: 10px 10px;
     border: 2px solid #0011fc;
     border-radius: 5px;
-    display: none;
+    /* display: none; */
 }
 /* =========Search box====== */
 .searchBox {
@@ -151,6 +151,10 @@ header {
 .body-courses {
     margin-top: 50px;
     /* display: table-row-group; */
+}
+.result{
+    font-size: 5em;
+    margin-left: 40%;
 }
 .course-info {
     width: 20%;
@@ -206,7 +210,7 @@ hr {
 .content label {
     font-family: serif;
     font-style: italic;
-    /* margin-left: 70px; */
+    margin-left: 70px;
 }
 .content p {
     width: 95%;
@@ -216,23 +220,30 @@ hr {
     white-space: nowrap; 
     text-overflow: ellipsis;
 }
-.content button, #enroll, #dropout {
+.content button, .enroll,.dropout {
     /* float: right; */
     font-size: 11pt;
     position: absolute;
     bottom: 15px;
     right: 3px;
     font-weight: bold;
-    /* border: 2px solid #0034f3; */
+    border: 2px solid #0034f3;
     padding: 5px 28%;
     border-radius: 7px;
     width: 97%;
     background: #0034f3;
     color: #fff;
     cursor: pointer;
-    outline: none;
 }
-
+.dropout {display: none;}
+#toEnroll{
+    color:red;
+    font-size:17px;
+}
+#done{
+    color:green;
+    font-size:17px;
+}
 .show_courses{
     width: 100%;
     height: 50px;
@@ -283,7 +294,6 @@ figure {
 }
 .profile_pic {
     width: 242px;
-    /* height: 395px; */
     background: #fff;
     position: relative;
     top: -110px;
@@ -301,6 +311,7 @@ figure {
     width: 200px;
     height: 200px;
     margin: 15px 0px 0px 20px;
+    ;
 }
 .profile_pic .ngo_url {
     text-align: center;
@@ -310,13 +321,14 @@ figure {
 }
 .profile_pic .ul {
     font-weight: normal;
-    margin: 0px 15px;
+    margin: 10px 15px;
     font-style: italic;
     font-size: 10pt;
 }
 .profile_pic .ul li {
     margin-bottom: 10px;
 }
+.profile_pic .ul div {margin-bottom: 50px;}
 .about {
     margin-top: 35px;
     margin-left: 280px;

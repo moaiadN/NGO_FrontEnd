@@ -53,10 +53,10 @@ function NgoPorfile() {
       });
     }
 
-//     document.getElementById('logout').addEventListener('click',logout);
-//   function logout(){
-//     // alert('hi');
-//     localStorage.removeItem('token');
-//   localStorage.removeItem("id");
-//   window.location = '../index.html'
-//   }
+    document.getElementById('logout').addEventListener('click',logout);
+  function logout(){
+    // alert('hi');
+    localStorage.removeItem('token');
+  localStorage.removeItem("id");
+  window.location = '../index.html'
+  }

@@ -102,6 +102,8 @@ nav {
 .menu-show {
     display: none;
 }
+/* ========================== */
+.fileupload{ display: none;}
 /* ========================= Footer ========================== */
 .footer {
     width: 100%;
@@ -111,9 +113,7 @@ nav {
     text-align: center;
     float: left;
 }
-.footer-content {
-        margin-top: 25px;
-    }
+
 /* =========================== Responsive =========================== */
 @media only screen and (max-width: 600px) {
     .list {
@@ -300,16 +300,15 @@ figure {
     top: -140px;
     box-shadow: 0 5px 10px #ccc;
     float: left;
+    cursor: pointer;
 }
 .image img{
     width: 100%;
     height: 100%;
-    cursor: pointer;
 }
-.image .fileupload {
-    display: none;
+.footer-content {
+    margin-top: 25px;
 }
-
 form{
     margin-bottom: 8px;
 }
